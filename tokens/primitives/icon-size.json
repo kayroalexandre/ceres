@@ -1,0 +1,30 @@
+{
+  "size": {
+    "icon": {
+      "12": {
+        "value": "0.75rem",
+        "description": "Icone minimo para metadados e apoios visuais bem compactos."
+      },
+      "16": {
+        "value": "1rem",
+        "description": "Icone base para texto inline, labels e affordances pequenas."
+      },
+      "20": {
+        "value": "1.25rem",
+        "description": "Icone padrao para botoes, inputs e navegacao utilitaria."
+      },
+      "24": {
+        "value": "1.5rem",
+        "description": "Icone amplo para acoes principais e componentes com maior presenca."
+      },
+      "32": {
+        "value": "2rem",
+        "description": "Icone de destaque para blocos de recurso, cards e empty states."
+      },
+      "40": {
+        "value": "2.5rem",
+        "description": "Icone hero para pontos de entrada visuais e comunicacao expressiva."
+      }
+    }
+  }
+}

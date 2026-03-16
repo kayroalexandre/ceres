@@ -1,0 +1,30 @@
+{
+  "typography": {
+    "letterSpacing": {
+      "display": {
+        "value": "{typography.letterSpacing.tighter}",
+        "description": "Tracking para displays e titulos hero muito grandes."
+      },
+      "title": {
+        "value": "{typography.letterSpacing.tight}",
+        "description": "Tracking para titulos de pagina e subtitulos com mais presenca."
+      },
+      "heading": {
+        "value": "{typography.letterSpacing.tight}",
+        "description": "Tracking para headings e subheadings utilitarios."
+      },
+      "body": {
+        "value": "{typography.letterSpacing.normal}",
+        "description": "Tracking neutro para leitura corrida e conteudo principal."
+      },
+      "label": {
+        "value": "{typography.letterSpacing.wide}",
+        "description": "Tracking levemente aberto para labels e pequenas interfaces."
+      },
+      "code": {
+        "value": "{typography.letterSpacing.normal}",
+        "description": "Tracking neutro para manter alinhamento em textos monoespacados."
+      }
+    }
+  }
+}

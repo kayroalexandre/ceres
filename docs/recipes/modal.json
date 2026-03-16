@@ -1,0 +1,39 @@
+{
+  "component": "modal",
+  "description": "Recipe para dialogos modais e superficies temporarias maiores.",
+  "slots": {
+    "scrim": {
+      "color": "color.overlay.scrim.color",
+      "opacity": "color.overlay.scrim.opacity"
+    },
+    "panel": {
+      "background": "color.background.surface.default",
+      "borderColor": "color.border.subtle",
+      "radius": "size.radius.surface.md",
+      "padding": "size.spacing.inset.lg",
+      "shadow": "effect.shadow.lg"
+    },
+    "title": {
+      "fontFamily": "typography.title.page.fontFamily",
+      "fontSize": "typography.title.page.sizeBase",
+      "fontWeight": "typography.title.page.fontWeight",
+      "color": "color.content.primary"
+    },
+    "body": {
+      "fontFamily": "typography.body.body.fontFamily",
+      "fontSize": "typography.body.body.sizeMedium",
+      "fontWeight": "typography.body.body.fontWeightRegular",
+      "color": "color.content.secondary"
+    }
+  },
+  "motion": {
+    "enter": {
+      "duration": "motion.transition.dialog.enterDuration",
+      "easing": "motion.transition.dialog.enterEasing"
+    },
+    "exit": {
+      "duration": "motion.transition.dialog.exitDuration",
+      "easing": "motion.transition.dialog.exitEasing"
+    }
+  }
+}

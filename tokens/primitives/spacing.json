@@ -1,0 +1,78 @@
+{
+  "size": {
+    "spacing": {
+      "0": {
+        "value": "0rem",
+        "description": "Remove qualquer gap, padding ou margem. Use para layouts colapsados ou alinhamentos sem respiro."
+      },
+      "2": {
+        "value": "0.125rem",
+        "description": "Microespaço para ajustes finos, ícones, hairlines e compensações visuais."
+      },
+      "4": {
+        "value": "0.25rem",
+        "description": "Espaço mínimo para elementos muito densos, como labels compactas e grupos apertados."
+      },
+      "6": {
+        "value": "0.375rem",
+        "description": "Espaço curto para interfaces densas quando 4px fica apertado e 8px já abre demais."
+      },
+      "8": {
+        "value": "0.5rem",
+        "description": "Espaçamento pequeno para relação próxima entre texto, ícone e controles compactos."
+      },
+      "12": {
+        "value": "0.75rem",
+        "description": "Espaçamento de apoio para componentes pequenos e grupos relacionados dentro do mesmo bloco."
+      },
+      "16": {
+        "value": "1rem",
+        "description": "Espaçamento base para padding de componentes, gaps padrão e ritmo principal da interface."
+      },
+      "24": {
+        "value": "1.5rem",
+        "description": "Espaço confortável para separar seções internas, cards e blocos com hierarquia clara."
+      },
+      "32": {
+        "value": "2rem",
+        "description": "Espaçamento amplo para separar regiões, grupos funcionais e áreas de leitura."
+      },
+      "48": {
+        "value": "3rem",
+        "description": "Espaço de seção para respiro entre áreas maiores da página ou componentes de destaque."
+      },
+      "64": {
+        "value": "4rem",
+        "description": "Espaçamento de layout para divisões grandes entre faixas de conteúdo e estruturas principais."
+      },
+      "96": {
+        "value": "6rem",
+        "description": "Espaçamento macro para hero sections, transições entre blocos e mudanças fortes de contexto."
+      },
+      "160": {
+        "value": "10rem",
+        "description": "Maior espaço da escala. Use para separações monumentais e composições editoriais amplas."
+      },
+      "negative4": {
+        "value": "-0.25rem",
+        "description": "Sobreposição leve para compensações visuais ou aproximações muito sutis entre elementos."
+      },
+      "negative8": {
+        "value": "-0.5rem",
+        "description": "Sobreposição pequena para empilhar camadas ou ajustar componentes com borda e sombra."
+      },
+      "negative12": {
+        "value": "-0.75rem",
+        "description": "Sobreposição moderada para efeitos de agrupamento ou composição editorial mais compacta."
+      },
+      "negative16": {
+        "value": "-1rem",
+        "description": "Sobreposição forte para componentes deliberadamente encaixados, como avatares e cards empilhados."
+      },
+      "negative24": {
+        "value": "-1.5rem",
+        "description": "Maior sobreposição da escala. Use com parcimônia em composições hero ou agrupamentos expressivos."
+      }
+    }
+  }
+}

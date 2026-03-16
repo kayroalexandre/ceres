@@ -1,0 +1,50 @@
+{
+  "typography": {
+    "heading": {
+      "heading": {
+        "fontFamily": {
+          "value": "{typography.fontFamily.secondary}",
+          "description": "Família para headings utilitários e títulos de bloco dentro da interface."
+        },
+        "sizeSmall": {
+          "value": "{typography.fontSize.18}",
+          "description": "Heading compacto para módulos menores e componentes com pouco espaço vertical."
+        },
+        "sizeBase": {
+          "value": "{typography.fontSize.20}",
+          "description": "Heading padrão para cartões, painéis e seções internas."
+        },
+        "sizeLarge": {
+          "value": "{typography.fontSize.24}",
+          "description": "Heading ampliado para seções mais relevantes ou agrupamentos de maior destaque."
+        },
+        "fontWeight": {
+          "value": "{typography.fontWeight.semibold}",
+          "description": "Peso recomendado para headings, equilibrando destaque e legibilidade."
+        }
+      },
+      "subheading": {
+        "fontFamily": {
+          "value": "{typography.fontFamily.secondary}",
+          "description": "Família para subheadings que introduzem conteúdo de apoio logo abaixo de um heading."
+        },
+        "sizeSmall": {
+          "value": "{typography.fontSize.16}",
+          "description": "Subheading mínimo para componentes compactos e estruturas densas."
+        },
+        "sizeMedium": {
+          "value": "{typography.fontSize.18}",
+          "description": "Subheading intermediário para blocos de conteúdo padrão."
+        },
+        "sizeLarge": {
+          "value": "{typography.fontSize.20}",
+          "description": "Subheading maior para introduções com mais peso visual, sem virar heading principal."
+        },
+        "fontWeight": {
+          "value": "{typography.fontWeight.regular}",
+          "description": "Peso padrão para subheading, preservando a diferença hierárquica em relação ao heading."
+        }
+      }
+    }
+  }
+}

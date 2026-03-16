@@ -1,0 +1,18 @@
+{
+  "size": {
+    "borderWidth": {
+      "subtle": {
+        "value": "{size.borderWidth.1}",
+        "description": "Espessura para bordas leves, separadores e contornos discretos."
+      },
+      "strong": {
+        "value": "{size.borderWidth.2}",
+        "description": "Espessura para bordas mais presentes, foco e estados destacados."
+      },
+      "accent": {
+        "value": "{size.borderWidth.4}",
+        "description": "Espessura forte para acentos visuais, tabs ativas e marcadores laterais."
+      }
+    }
+  }
+}

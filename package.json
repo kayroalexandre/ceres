@@ -1,0 +1,118 @@
+{
+  "name": "@ceres/design-tokens",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://github.com/kayroalexandre/ceres",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kayroalexandre/ceres.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kayroalexandre/ceres/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "files": [
+    "dist/**/*",
+    "docs/public-contract.md",
+    "docs/output-manifest.json",
+    "docs/recipes/*.json",
+    "!docs/recipes/README.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    "./package.json": "./package.json",
+    "./manifest": {
+      "import": "./dist/manifest.js",
+      "types": "./dist/manifest.d.ts"
+    },
+    "./manifest.json": "./dist/manifest.json",
+    "./contract": "./docs/public-contract.md",
+    "./contract.md": "./docs/public-contract.md",
+    "./recipes/button": {
+      "import": "./dist/recipes/button.js",
+      "types": "./dist/recipes/button.d.ts"
+    },
+    "./recipes/button.json": "./docs/recipes/button.json",
+    "./recipes/input": {
+      "import": "./dist/recipes/input.js",
+      "types": "./dist/recipes/input.d.ts"
+    },
+    "./recipes/input.json": "./docs/recipes/input.json",
+    "./recipes/card": {
+      "import": "./dist/recipes/card.js",
+      "types": "./dist/recipes/card.d.ts"
+    },
+    "./recipes/card.json": "./docs/recipes/card.json",
+    "./recipes/modal": {
+      "import": "./dist/recipes/modal.js",
+      "types": "./dist/recipes/modal.d.ts"
+    },
+    "./recipes/modal.json": "./docs/recipes/modal.json",
+    "./recipes/badge": {
+      "import": "./dist/recipes/badge.js",
+      "types": "./dist/recipes/badge.d.ts"
+    },
+    "./recipes/badge.json": "./docs/recipes/badge.json",
+    "./recipes/toast": {
+      "import": "./dist/recipes/toast.js",
+      "types": "./dist/recipes/toast.d.ts"
+    },
+    "./recipes/toast.json": "./docs/recipes/toast.json",
+    "./ceres/light": {
+      "import": "./dist/ceres/light/index.js",
+      "types": "./dist/ceres/light/index.d.ts"
+    },
+    "./ceres/light.css": "./dist/ceres/light/theme.css",
+    "./ceres/light.json": "./dist/ceres/light/tokens.json",
+    "./ceres/dark": {
+      "import": "./dist/ceres/dark/index.js",
+      "types": "./dist/ceres/dark/index.d.ts"
+    },
+    "./ceres/dark.css": "./dist/ceres/dark/theme.css",
+    "./ceres/dark.json": "./dist/ceres/dark/tokens.json",
+    "./eris/light": {
+      "import": "./dist/eris/light/index.js",
+      "types": "./dist/eris/light/index.d.ts"
+    },
+    "./eris/light.css": "./dist/eris/light/theme.css",
+    "./eris/light.json": "./dist/eris/light/tokens.json",
+    "./eris/dark": {
+      "import": "./dist/eris/dark/index.js",
+      "types": "./dist/eris/dark/index.d.ts"
+    },
+    "./eris/dark.css": "./dist/eris/dark/theme.css",
+    "./eris/dark.json": "./dist/eris/dark/tokens.json",
+    "./pluto/light": {
+      "import": "./dist/pluto/light/index.js",
+      "types": "./dist/pluto/light/index.d.ts"
+    },
+    "./pluto/light.css": "./dist/pluto/light/theme.css",
+    "./pluto/light.json": "./dist/pluto/light/tokens.json",
+    "./pluto/dark": {
+      "import": "./dist/pluto/dark/index.js",
+      "types": "./dist/pluto/dark/index.d.ts"
+    },
+    "./pluto/dark.css": "./dist/pluto/dark/theme.css",
+    "./pluto/dark.json": "./dist/pluto/dark/tokens.json"
+  },
+  "scripts": {
+    "build": "node scripts/build-tokens.mjs",
+    "validate": "node scripts/validate-tokens.mjs",
+    "contract": "node scripts/generate-public-contract.mjs",
+    "smoke": "node scripts/smoke-test.mjs",
+    "check": "npm run validate && npm run build && npm run contract && npm run smoke",
+    "prepack": "npm run check",
+    "pack:check": "env npm_config_cache=/tmp/ceres-npm-cache npm pack --dry-run"
+  },
+  "devDependencies": {
+    "style-dictionary": "5.1.1"
+  }
+}

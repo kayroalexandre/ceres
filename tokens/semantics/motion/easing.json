@@ -1,0 +1,22 @@
+{
+  "motion": {
+    "easing": {
+      "default": {
+        "value": "{motion.easing.standard}",
+        "description": "Curva padrao para a maior parte das transicoes de interface."
+      },
+      "enter": {
+        "value": "{motion.easing.enterCurve}",
+        "description": "Curva recomendada para entradas de elementos e superfícies."
+      },
+      "exit": {
+        "value": "{motion.easing.exitCurve}",
+        "description": "Curva recomendada para saídas e fechamentos de elementos."
+      },
+      "emphasis": {
+        "value": "{motion.easing.emphasized}",
+        "description": "Curva para animacoes com maior impacto visual e comportamento mais expressivo."
+      }
+    }
+  }
+}

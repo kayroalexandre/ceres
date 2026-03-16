@@ -1,0 +1,36 @@
+{
+  "color": {
+    "content": {
+      "primary": {
+        "value": "{color.gray.900}",
+        "description": "Texto principal para leitura, títulos utilitários e informação de maior prioridade."
+      },
+      "secondary": {
+        "value": "{color.gray.700}",
+        "description": "Texto secundário para apoio, metadados e informação menos prioritária."
+      },
+      "inactive": {
+        "value": "{color.gray.700}",
+        "description": "Texto para elementos inativos, mantendo legibilidade sem competir com o estado ativo."
+      },
+      "disabled": {
+        "value": "{color.gray.500}",
+        "description": "Texto para elementos desabilitados, comunicando indisponibilidade com contraste reduzido."
+      },
+      "inverse": {
+        "value": "{color.white}",
+        "description": "Texto sobre fundos escuros ou de marca quando o conteúdo precisa de contraste máximo."
+      },
+      "inverse-disabled": {
+        "value": "{color.slate.400}",
+        "description": "Texto desabilitado em contextos escuros ou sobre superfícies invertidas."
+      },
+      "brand": {
+        "default": {
+          "value": "{color.brand.700}",
+          "description": "Texto de marca para links, destaques editoriais e mensagens de ênfase."
+        }
+      }
+    }
+  }
+}

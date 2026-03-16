@@ -1,0 +1,30 @@
+{
+  "motion": {
+    "duration": {
+      "instant": {
+        "value": "{motion.duration.0}",
+        "description": "Duracao nula para mudancas que devem acontecer sem animacao perceptivel."
+      },
+      "micro": {
+        "value": "{motion.duration.100}",
+        "description": "Duracao para feedbacks imediatos como hover, focus e pequenas mudancas de estado."
+      },
+      "fast": {
+        "value": "{motion.duration.150}",
+        "description": "Duracao para acoes rapidas e interacoes recorrentes em componentes."
+      },
+      "moderate": {
+        "value": "{motion.duration.200}",
+        "description": "Duracao base para transicoes gerais da interface."
+      },
+      "slow": {
+        "value": "{motion.duration.300}",
+        "description": "Duracao para paineis, overlays e transicoes com mais respiro."
+      },
+      "emphasis": {
+        "value": "{motion.duration.500}",
+        "description": "Duracao para movimentos com maior carga expressiva ou destaque visual."
+      }
+    }
+  }
+}

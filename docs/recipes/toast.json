@@ -1,0 +1,66 @@
+{
+  "component": "toast",
+  "description": "Recipe para toasts e mensagens temporarias de feedback.",
+  "slots": {
+    "container": {
+      "radius": "size.radius.surface.md",
+      "padding": "size.spacing.inset.md",
+      "gap": "size.spacing.inline.sm",
+      "shadow": "effect.shadow.md",
+      "borderWidth": "size.borderWidth.subtle"
+    },
+    "title": {
+      "fontFamily": "typography.heading.subheading.fontFamily",
+      "fontSize": "typography.heading.subheading.sizeMedium",
+      "fontWeight": "typography.heading.subheading.fontWeight"
+    },
+    "body": {
+      "fontFamily": "typography.body.body.fontFamily",
+      "fontSize": "typography.body.body.sizeSmall",
+      "fontWeight": "typography.body.body.fontWeightRegular"
+    },
+    "icon": {
+      "size": "size.icon.controlMd"
+    }
+  },
+  "variants": {
+    "success": {
+      "background": "color.feedback.success.background",
+      "borderColor": "color.feedback.success.border",
+      "titleColor": "color.feedback.success.foreground",
+      "bodyColor": "color.feedback.success.foreground",
+      "iconColor": "color.feedback.success.foreground"
+    },
+    "warning": {
+      "background": "color.feedback.warning.background",
+      "borderColor": "color.feedback.warning.border",
+      "titleColor": "color.feedback.warning.foreground",
+      "bodyColor": "color.feedback.warning.foreground",
+      "iconColor": "color.feedback.warning.foreground"
+    },
+    "danger": {
+      "background": "color.feedback.danger.background",
+      "borderColor": "color.feedback.danger.border",
+      "titleColor": "color.feedback.danger.foreground",
+      "bodyColor": "color.feedback.danger.foreground",
+      "iconColor": "color.feedback.danger.foreground"
+    },
+    "info": {
+      "background": "color.feedback.info.background",
+      "borderColor": "color.feedback.info.border",
+      "titleColor": "color.feedback.info.foreground",
+      "bodyColor": "color.feedback.info.foreground",
+      "iconColor": "color.feedback.info.foreground"
+    }
+  },
+  "motion": {
+    "enter": {
+      "duration": "motion.transition.dialog.enterDuration",
+      "easing": "motion.transition.dialog.enterEasing"
+    },
+    "exit": {
+      "duration": "motion.transition.dialog.exitDuration",
+      "easing": "motion.transition.dialog.exitEasing"
+    }
+  }
+}

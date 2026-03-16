@@ -1,0 +1,62 @@
+{
+  "color": {
+    "action": {
+      "primary": {
+        "background": {
+          "value": "{color.brand.500}",
+          "description": "Preenchimento base da ação principal. Use em botões e controles de maior prioridade."
+        },
+        "background-hover": {
+          "value": "{color.brand.600}",
+          "description": "Estado hover da ação principal para reforçar resposta visual sem perder identidade."
+        },
+        "foreground": {
+          "value": "{color.white}",
+          "description": "Conteúdo sobre ação principal, garantindo legibilidade em alto contraste."
+        }
+      },
+      "neutral": {
+        "background": {
+          "value": "{color.gray.100}",
+          "description": "Preenchimento neutro para ações secundárias, ghost-filled ou controles de baixa ênfase."
+        },
+        "background-hover": {
+          "value": "{color.gray.200}",
+          "description": "Estado hover da ação neutra para indicar interatividade sem competir com a ação primária."
+        },
+        "foreground": {
+          "value": "{color.gray.900}",
+          "description": "Conteúdo sobre ação neutra, mantendo leitura confortável em superfícies claras."
+        }
+      },
+      "inactive": {
+        "background": {
+          "value": "{color.gray.50}",
+          "description": "Preenchimento para ações inativas, quando o elemento continua presente mas sem prioridade visual."
+        },
+        "background-hover": {
+          "value": "{color.gray.100}",
+          "description": "Variação suave de hover para ações inativas que ainda permanecem interativas."
+        },
+        "foreground": {
+          "value": "{color.gray.700}",
+          "description": "Conteúdo sobre ação inativa, preservando leitura sem competir com ações ativas."
+        }
+      },
+      "disabled": {
+        "background": {
+          "value": "{color.gray.100}",
+          "description": "Preenchimento para ações desabilitadas, comunicando indisponibilidade de forma neutra."
+        },
+        "background-hover": {
+          "value": "{color.gray.100}",
+          "description": "Estado hover idêntico ao base para evitar sinalizar interatividade em ações desabilitadas."
+        },
+        "foreground": {
+          "value": "{color.gray.500}",
+          "description": "Conteúdo sobre ação desabilitada, com contraste reduzido para reforçar o estado inativo."
+        }
+      }
+    }
+  }
+}

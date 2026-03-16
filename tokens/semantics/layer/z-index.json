@@ -1,0 +1,38 @@
+{
+  "layer": {
+    "zIndex": {
+      "base": {
+        "value": "{layer.zIndex.0}",
+        "description": "Camada base do fluxo normal da interface."
+      },
+      "raised": {
+        "value": "{layer.zIndex.10}",
+        "description": "Camada para superficies ligeiramente elevadas."
+      },
+      "sticky": {
+        "value": "{layer.zIndex.100}",
+        "description": "Camada para cabecalhos fixos e navegacao persistente."
+      },
+      "dropdown": {
+        "value": "{layer.zIndex.200}",
+        "description": "Camada para menus, dropdowns e popovers pequenos."
+      },
+      "overlay": {
+        "value": "{layer.zIndex.300}",
+        "description": "Camada para overlays de bloqueio e scrims."
+      },
+      "modal": {
+        "value": "{layer.zIndex.400}",
+        "description": "Camada para modais, drawers e superficies temporarias maiores."
+      },
+      "toast": {
+        "value": "{layer.zIndex.500}",
+        "description": "Camada para toasts e feedbacks flutuantes."
+      },
+      "tooltip": {
+        "value": "{layer.zIndex.600}",
+        "description": "Camada para tooltips e pequenos apoios acima dos demais overlays."
+      }
+    }
+  }
+}

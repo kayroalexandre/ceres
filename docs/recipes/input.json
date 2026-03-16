@@ -1,0 +1,50 @@
+{
+  "component": "input",
+  "description": "Recipe base para campos de texto e controles similares.",
+  "slots": {
+    "field": {
+      "height": "size.componentHeight.default",
+      "radius": "size.radius.interactive.md",
+      "paddingInline": "size.spacing.inset.md",
+      "gap": "size.spacing.inline.sm",
+      "borderWidth": "size.borderWidth.subtle"
+    },
+    "text": {
+      "fontFamily": "typography.body.body.fontFamily",
+      "fontSize": "typography.body.body.sizeMedium",
+      "fontWeight": "typography.body.body.fontWeightRegular"
+    },
+    "leadingIcon": {
+      "size": "size.icon.controlMd"
+    }
+  },
+  "states": {
+    "default": {
+      "background": "color.background.surface.default",
+      "borderColor": "color.border.subtle",
+      "textColor": "color.content.primary",
+      "placeholderColor": "color.content.secondary",
+      "iconColor": "color.foreground.subtle"
+    },
+    "hover": {
+      "borderColor": "color.border.strong"
+    },
+    "focus": {
+      "borderColor": "color.border.brand.default",
+      "stateLayerColor": "color.stateLayer.focus.color",
+      "stateLayerOpacity": "color.stateLayer.focus.opacity"
+    },
+    "disabled": {
+      "background": "color.background.surface.subtle",
+      "borderColor": "color.border.subtle",
+      "textColor": "color.content.disabled",
+      "iconColor": "color.foreground.disabled"
+    }
+  },
+  "motion": {
+    "hover": {
+      "duration": "motion.transition.hover.duration",
+      "easing": "motion.transition.hover.easing"
+    }
+  }
+}

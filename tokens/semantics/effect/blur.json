@@ -1,0 +1,26 @@
+{
+  "effect": {
+    "blur": {
+      "backdrop": {
+        "sm": {
+          "value": "{effect.blur.8}",
+          "description": "Desfoque para pequenos overlays, toolbars translúcidas e superficies discretas."
+        },
+        "md": {
+          "value": "{effect.blur.16}",
+          "description": "Desfoque padrão para glass surfaces, drawers e paineis translúcidos."
+        },
+        "lg": {
+          "value": "{effect.blur.24}",
+          "description": "Desfoque amplo para modais, hero overlays e planos de fundo com maior separacao."
+        }
+      },
+      "surface": {
+        "glass": {
+          "value": "{effect.blur.16}",
+          "description": "Desfoque recomendado para cards e superficies de vidro como uso mais comum."
+        }
+      }
+    }
+  }
+}

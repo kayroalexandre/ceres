@@ -1,0 +1,48 @@
+{
+  "layout": {
+    "grid": {
+      "mobile": {
+        "columns": {
+          "value": "{layout.grid.columns.4}",
+          "description": "Numero de colunas recomendado para layouts mobile."
+        },
+        "gutter": {
+          "value": "{layout.grid.gutter.16}",
+          "description": "Espaco entre colunas em grids mobile."
+        },
+        "margin": {
+          "value": "{layout.grid.margin.16}",
+          "description": "Margem externa base do grid mobile."
+        }
+      },
+      "tablet": {
+        "columns": {
+          "value": "{layout.grid.columns.8}",
+          "description": "Numero de colunas recomendado para tablet."
+        },
+        "gutter": {
+          "value": "{layout.grid.gutter.24}",
+          "description": "Espaco entre colunas em grids de tablet."
+        },
+        "margin": {
+          "value": "{layout.grid.margin.24}",
+          "description": "Margem externa base do grid de tablet."
+        }
+      },
+      "desktop": {
+        "columns": {
+          "value": "{layout.grid.columns.12}",
+          "description": "Numero de colunas recomendado para desktop."
+        },
+        "gutter": {
+          "value": "{layout.grid.gutter.32}",
+          "description": "Espaco entre colunas em grids desktop."
+        },
+        "margin": {
+          "value": "{layout.grid.margin.32}",
+          "description": "Margem externa base do grid desktop."
+        }
+      }
+    }
+  }
+}

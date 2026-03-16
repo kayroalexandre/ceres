@@ -1,0 +1,96 @@
+{
+  "layout": {
+    "breakpoint": {
+      "480": {
+        "value": "480px",
+        "description": "Ponto de quebra para telas compactas e smartphones menores."
+      },
+      "768": {
+        "value": "768px",
+        "description": "Ponto de quebra para tablets e layouts intermediarios."
+      },
+      "1024": {
+        "value": "1024px",
+        "description": "Ponto de quebra para desktop inicial e paineis com mais espaco."
+      },
+      "1280": {
+        "value": "1280px",
+        "description": "Ponto de quebra para desktops amplos e paginas principais."
+      },
+      "1440": {
+        "value": "1440px",
+        "description": "Ponto de quebra para layouts largos com maior respiro horizontal."
+      }
+    },
+    "container": {
+      "640": {
+        "value": "640px",
+        "description": "Largura para conteudo de leitura e layouts compactos."
+      },
+      "768": {
+        "value": "768px",
+        "description": "Largura para paginas de texto e areas de leitura confortavel."
+      },
+      "1024": {
+        "value": "1024px",
+        "description": "Largura para paginas mistas e layouts de dashboard compactos."
+      },
+      "1280": {
+        "value": "1280px",
+        "description": "Largura base para aplicacoes desktop e paginas principais."
+      },
+      "1440": {
+        "value": "1440px",
+        "description": "Largura ampla para dashboards e experiencias desktop expandidas."
+      },
+      "fluid": {
+        "value": "100%",
+        "description": "Container sem limite fixo, ocupando toda a largura disponivel."
+      }
+    },
+    "grid": {
+      "columns": {
+        "4": {
+          "value": "4",
+          "description": "Grade compacta para mobile e estruturas simples."
+        },
+        "8": {
+          "value": "8",
+          "description": "Grade intermediaria para tablet e layouts mais flexiveis."
+        },
+        "12": {
+          "value": "12",
+          "description": "Grade padrao para desktop e composicoes mais complexas."
+        }
+      },
+      "gutter": {
+        "16": {
+          "value": "16px",
+          "description": "Espaco entre colunas em layouts compactos."
+        },
+        "24": {
+          "value": "24px",
+          "description": "Espaco base entre colunas para layouts gerais."
+        },
+        "32": {
+          "value": "32px",
+          "description": "Espaco amplo entre colunas para desktop e composicoes abertas."
+        }
+      },
+      "margin": {
+        "16": {
+          "value": "16px",
+          "description": "Margem externa compacta para mobile."
+        },
+        "24": {
+          "value": "24px",
+          "description": "Margem externa base para tablet e layouts gerais."
+        },
+        "32": {
+          "value": "32px",
+          "description": "Margem externa ampla para desktop e conteudos com mais respiro."
+        }
+      }
+    }
+  }
+}

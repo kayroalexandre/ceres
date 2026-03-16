@@ -1,0 +1,24 @@
+{
+  "color": {
+    "border": {
+      "subtle": {
+        "value": "{color.gray.200}",
+        "description": "Borda leve para separar áreas relacionadas sem competir com o conteúdo."
+      },
+      "strong": {
+        "value": "{color.gray.300}",
+        "description": "Borda mais presente para inputs, contêineres destacados e delimitação clara."
+      },
+      "inverse": {
+        "value": "{color.slate.700}",
+        "description": "Borda para contextos escuros, mantendo contraste suficiente sem endurecer demais a interface."
+      },
+      "brand": {
+        "default": {
+          "value": "{color.brand.600}",
+          "description": "Borda de marca para estados ativos, foco e contornos com ênfase."
+        }
+      }
+    }
+  }
+}

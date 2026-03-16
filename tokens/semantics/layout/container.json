@@ -1,0 +1,22 @@
+{
+  "layout": {
+    "container": {
+      "reading": {
+        "value": "{layout.container.768}",
+        "description": "Container para conteudo de leitura, artigos e blocos textuais."
+      },
+      "page": {
+        "value": "{layout.container.1280}",
+        "description": "Container base para paginas principais e layouts de aplicacao."
+      },
+      "wide": {
+        "value": "{layout.container.1440}",
+        "description": "Container amplo para dashboards, areas densas e layouts expandidos."
+      },
+      "full": {
+        "value": "{layout.container.fluid}",
+        "description": "Container fluido sem largura maxima fixa."
+      }
+    }
+  }
+}

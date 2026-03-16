@@ -1,0 +1,30 @@
+{
+  "size": {
+    "icon": {
+      "inline": {
+        "value": "{size.icon.16}",
+        "description": "Tamanho para icones acompanhando texto e metadados inline."
+      },
+      "controlSm": {
+        "value": "{size.icon.16}",
+        "description": "Icone para botoes pequenos, campos densos e affordances compactas."
+      },
+      "controlMd": {
+        "value": "{size.icon.20}",
+        "description": "Icone base para a maioria dos componentes interativos."
+      },
+      "controlLg": {
+        "value": "{size.icon.24}",
+        "description": "Icone para controles maiores e acoes com mais destaque."
+      },
+      "displaySm": {
+        "value": "{size.icon.32}",
+        "description": "Icone para cards, recursos e empty states compactos."
+      },
+      "displayMd": {
+        "value": "{size.icon.40}",
+        "description": "Icone de destaque para comunicacao visual de maior escala."
+      }
+    }
+  }
+}

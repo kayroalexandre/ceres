@@ -1,0 +1,17 @@
+{
+  "color": {
+    "brand": {
+      "50": { "value": "{color.rose.50}" },
+      "100": { "value": "{color.rose.100}" },
+      "200": { "value": "{color.rose.200}" },
+      "300": { "value": "{color.rose.300}" },
+      "400": { "value": "{color.rose.400}" },
+      "500": { "value": "{color.rose.500}" },
+      "600": { "value": "{color.rose.600}" },
+      "700": { "value": "{color.rose.700}" },
+      "800": { "value": "{color.rose.800}" },
+      "900": { "value": "{color.rose.900}" },
+      "950": { "value": "{color.rose.950}" }
+    }
+  }
+}

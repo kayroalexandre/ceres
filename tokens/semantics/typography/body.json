@@ -1,0 +1,66 @@
+{
+  "typography": {
+    "body": {
+      "body": {
+        "fontFamily": {
+          "value": "{typography.fontFamily.secondary}",
+          "description": "Família padrão para leitura em interface, conteúdos corridos e textos funcionais."
+        },
+        "sizeSmall": {
+          "value": "{typography.fontSize.14}",
+          "description": "Body compacto para tabelas, listas densas e supporting text."
+        },
+        "sizeMedium": {
+          "value": "{typography.fontSize.16}",
+          "description": "Body padrão para leitura principal em aplicações e páginas."
+        },
+        "sizeLarge": {
+          "value": "{typography.fontSize.18}",
+          "description": "Body ampliado para introduções, textos de destaque e leitura confortável em blocos curtos."
+        },
+        "fontWeightRegular": {
+          "value": "{typography.fontWeight.regular}",
+          "description": "Peso padrão para leitura contínua e conteúdo base."
+        },
+        "fontWeightMedium": {
+          "value": "{typography.fontWeight.medium}",
+          "description": "Peso para ênfases moderadas em corpo de texto, labels e destaques discretos."
+        },
+        "fontWeightSemibold": {
+          "value": "{typography.fontWeight.semibold}",
+          "description": "Peso para trechos de destaque, chamadas curtas e corpo com maior autoridade visual."
+        },
+        "fontWeightStrong": {
+          "value": "{typography.fontWeight.semibold}",
+          "description": "Variação de maior ênfase para destacar informação importante dentro do fluxo de leitura."
+        },
+        "fontStyleItalic": {
+          "value": "{typography.fontStyle.italic}",
+          "description": "Estilo itálico para ênfase editorial, termos especiais e pequenos destaques narrativos."
+        }
+      },
+      "code": {
+        "fontFamily": {
+          "value": "{typography.fontFamily.mono}",
+          "description": "Família monoespaçada para trechos de código, tokens, comandos e dados técnicos."
+        },
+        "sizeSmall": {
+          "value": "{typography.fontSize.14}",
+          "description": "Código compacto para snippets inline e contextos com pouco espaço."
+        },
+        "sizeBase": {
+          "value": "{typography.fontSize.16}",
+          "description": "Tamanho padrão para blocos de código, terminal e dados monoespaçados."
+        },
+        "sizeLarge": {
+          "value": "{typography.fontSize.18}",
+          "description": "Código ampliado para demos, apresentações ou interfaces técnicas com leitura destacada."
+        },
+        "fontWeight": {
+          "value": "{typography.fontWeight.regular}",
+          "description": "Peso padrão para preservar ritmo e alinhamento em textos monoespaçados."
+        }
+      }
+    }
+  }
+}

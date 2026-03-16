@@ -1,0 +1,60 @@
+{
+  "component": "card",
+  "description": "Recipe para superficies de conteudo, painéis e itens interativos.",
+  "slots": {
+    "container": {
+      "radius": "size.radius.surface.md",
+      "padding": "size.spacing.inset.lg"
+    },
+    "title": {
+      "fontFamily": "typography.heading.heading.fontFamily",
+      "fontSize": "typography.heading.heading.sizeBase",
+      "fontWeight": "typography.heading.heading.fontWeight"
+    },
+    "body": {
+      "fontFamily": "typography.body.body.fontFamily",
+      "fontSize": "typography.body.body.sizeMedium",
+      "fontWeight": "typography.body.body.fontWeightRegular"
+    }
+  },
+  "variants": {
+    "surface": {
+      "default": {
+        "background": "color.background.surface.default",
+        "borderColor": "color.border.subtle",
+        "shadow": "effect.shadow.sm",
+        "titleColor": "color.content.primary",
+        "bodyColor": "color.content.secondary"
+      },
+      "raised": {
+        "background": "color.background.surface.subtle",
+        "borderColor": "color.border.strong",
+        "shadow": "effect.shadow.md"
+      }
+    },
+    "interactive": {
+      "default": {
+        "background": "color.background.surface.default",
+        "borderColor": "color.border.subtle",
+        "shadow": "effect.shadow.sm"
+      },
+      "hover": {
+        "borderColor": "color.border.strong",
+        "stateLayerColor": "color.stateLayer.hover.color",
+        "stateLayerOpacity": "color.stateLayer.hover.opacity",
+        "shadow": "effect.shadow.md"
+      },
+      "selected": {
+        "borderColor": "color.border.brand.default",
+        "stateLayerColor": "color.stateLayer.selected.color",
+        "stateLayerOpacity": "color.stateLayer.selected.opacity"
+      }
+    }
+  },
+  "motion": {
+    "hover": {
+      "duration": "motion.transition.hover.duration",
+      "easing": "motion.transition.hover.easing"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "motion": {
+    "duration": {
+      "0": {
+        "value": "0ms",
+        "description": "Sem duracao. Use para estados instantaneos ou quando nao houver animacao."
+      },
+      "75": {
+        "value": "75ms",
+        "description": "Duracao muito curta para microinteracoes e respostas quase instantaneas."
+      },
+      "100": {
+        "value": "100ms",
+        "description": "Duracao curta para hovers, focus e pequenas mudancas de estado."
+      },
+      "150": {
+        "value": "150ms",
+        "description": "Duracao rapida para interacoes frequentes em componentes de interface."
+      },
+      "200": {
+        "value": "200ms",
+        "description": "Duracao base para transicoes simples, entradas suaves e animacoes utilitarias."
+      },
+      "300": {
+        "value": "300ms",
+        "description": "Duracao confortavel para paineis, overlays e mudancas de contexto moderadas."
+      },
+      "500": {
+        "value": "500ms",
+        "description": "Duracao de enfase para transicoes mais expressivas e elementos com maior protagonismo."
+      },
+      "700": {
+        "value": "700ms",
+        "description": "Duracao longa para movimentos atmosfericos, hero transitions e cenas mais dramaticas."
+      }
+    },
+    "easing": {
+      "linear": {
+        "value": "linear",
+        "description": "Curva neutra para movimentos constantes e progressos lineares."
+      },
+      "standard": {
+        "value": "cubic-bezier(0.2, 0, 0, 1)",
+        "description": "Curva padrao para a maioria das transicoes de interface."
+      },
+      "enterCurve": {
+        "value": "cubic-bezier(0, 0, 0, 1)",
+        "description": "Curva para entradas suaves e aceleracao controlada ao surgir na tela."
+      },
+      "exitCurve": {
+        "value": "cubic-bezier(0.4, 0, 1, 1)",
+        "description": "Curva para saidas rapidas e conclusao mais direta do movimento."
+      },
+      "emphasized": {
+        "value": "cubic-bezier(0.2, 0, 0, 1.2)",
+        "description": "Curva com mais expressividade para transicoes de maior destaque visual."
+      }
+    }
+  }
+}

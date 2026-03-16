@@ -1,0 +1,56 @@
+{
+  "size": {
+    "spacing": {
+      "inline": {
+        "xs": {
+          "value": "{size.spacing.8}",
+          "description": "Gap horizontal curto para ícone e texto, metadados ou grupos compactos."
+        },
+        "sm": {
+          "value": "{size.spacing.12}",
+          "description": "Gap horizontal pequeno para campos, botões e pares de informação relacionados."
+        },
+        "md": {
+          "value": "{size.spacing.16}",
+          "description": "Gap horizontal base para a maioria dos layouts de componentes e formulários."
+        },
+        "lg": {
+          "value": "{size.spacing.24}",
+          "description": "Gap horizontal amplo para grupos independentes ou áreas com maior respiro visual."
+        }
+      },
+      "stack": {
+        "xs": {
+          "value": "{size.spacing.8}",
+          "description": "Empilhamento vertical curto para elementos diretamente relacionados no mesmo bloco."
+        },
+        "sm": {
+          "value": "{size.spacing.16}",
+          "description": "Empilhamento vertical padrão para pares de label e conteúdo ou itens de lista compactos."
+        },
+        "md": {
+          "value": "{size.spacing.24}",
+          "description": "Empilhamento vertical confortável para separar blocos internos e subseções."
+        },
+        "lg": {
+          "value": "{size.spacing.32}",
+          "description": "Empilhamento vertical amplo para seções maiores, cards ou grupos de conteúdo independentes."
+        }
+      },
+      "inset": {
+        "sm": {
+          "value": "{size.spacing.12}",
+          "description": "Padding interno compacto para componentes pequenos, badges e controles densos."
+        },
+        "md": {
+          "value": "{size.spacing.16}",
+          "description": "Padding interno base para cards, botões, inputs e superfícies padrão."
+        },
+        "lg": {
+          "value": "{size.spacing.24}",
+          "description": "Padding interno amplo para modais, painéis e componentes com mais conteúdo."
+        }
+      }
+    }
+  }
+}

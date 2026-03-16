@@ -1,0 +1,73 @@
+{
+  "component": "button",
+  "description": "Recipe base para botoes de acao principal e secundaria.",
+  "slots": {
+    "container": {
+      "height": "size.componentHeight.default",
+      "radius": "size.radius.interactive.md",
+      "paddingInline": "size.spacing.inset.md",
+      "gap": "size.spacing.inline.xs",
+      "shadow": "effect.shadow.sm",
+      "borderWidth": "size.borderWidth.subtle"
+    },
+    "label": {
+      "fontFamily": "typography.body.body.fontFamily",
+      "fontSize": "typography.body.body.sizeMedium",
+      "fontWeight": "typography.body.body.fontWeightMedium",
+      "letterSpacing": "typography.letterSpacing.label"
+    },
+    "icon": {
+      "size": "size.icon.controlMd"
+    }
+  },
+  "variants": {
+    "primary": {
+      "default": {
+        "background": "color.action.primary.background",
+        "borderColor": "color.action.primary.background",
+        "labelColor": "color.action.primary.foreground",
+        "iconColor": "color.action.primary.foreground"
+      },
+      "hover": {
+        "background": "color.action.primary.background-hover",
+        "borderColor": "color.action.primary.background-hover"
+      },
+      "disabled": {
+        "background": "color.action.disabled.background",
+        "borderColor": "color.action.disabled.background",
+        "labelColor": "color.action.disabled.foreground",
+        "iconColor": "color.action.disabled.foreground"
+      }
+    },
+    "neutral": {
+      "default": {
+        "background": "color.action.neutral.background",
+        "borderColor": "color.border.subtle",
+        "labelColor": "color.action.neutral.foreground",
+        "iconColor": "color.foreground.default"
+      },
+      "hover": {
+        "background": "color.action.neutral.background-hover",
+        "borderColor": "color.border.strong"
+      },
+      "disabled": {
+        "background": "color.action.disabled.background",
+        "borderColor": "color.border.subtle",
+        "labelColor": "color.action.disabled.foreground",
+        "iconColor": "color.foreground.disabled"
+      }
+    }
+  },
+  "states": {
+    "focus": {
+      "stateLayerColor": "color.stateLayer.focus.color",
+      "stateLayerOpacity": "color.stateLayer.focus.opacity"
+    }
+  },
+  "motion": {
+    "hover": {
+      "duration": "motion.transition.hover.duration",
+      "easing": "motion.transition.hover.easing"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@import "../../dist/ceres/light/theme.css";
+
+@layer base {
+  body {
+    @apply bg-canvas text-content-primary antialiased;
+    font-family: var(--font-body);
+  }
+}

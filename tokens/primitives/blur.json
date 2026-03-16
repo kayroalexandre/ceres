@@ -1,0 +1,34 @@
+{
+  "effect": {
+    "blur": {
+      "0": {
+        "value": "0px",
+        "description": "Sem desfoque. Estado neutro para superficies sem efeito de vidro."
+      },
+      "4": {
+        "value": "4px",
+        "description": "Desfoque leve para efeitos discretos de background e camadas translúcidas sutis."
+      },
+      "8": {
+        "value": "8px",
+        "description": "Desfoque compacto para vidros suaves, badges translúcidos e pequenos overlays."
+      },
+      "12": {
+        "value": "12px",
+        "description": "Desfoque intermediario para paineis translúcidos e superficies com profundidade moderada."
+      },
+      "16": {
+        "value": "16px",
+        "description": "Desfoque forte para glass surfaces, drawers e backdrops mais presentes."
+      },
+      "24": {
+        "value": "24px",
+        "description": "Desfoque amplo para modais, hero glass e planos de fundo com maior separacao."
+      },
+      "40": {
+        "value": "40px",
+        "description": "Maior desfoque da escala. Use em composicoes atmosfericas e efeitos hero."
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "color": {
+    "stateLayer": {
+      "hover": {
+        "color": {
+          "value": "{color.black}",
+          "description": "Cor base para camada de hover sobre superficies claras."
+        },
+        "opacity": {
+          "value": "{effect.opacity.5}",
+          "description": "Opacidade de hover para indicar interacao de forma suave."
+        }
+      },
+      "pressed": {
+        "color": {
+          "value": "{color.black}",
+          "description": "Cor base para camada de pressed sobre superficies claras."
+        },
+        "opacity": {
+          "value": "{effect.opacity.10}",
+          "description": "Opacidade para pressed e estados de toque mais perceptiveis."
+        }
+      },
+      "focus": {
+        "color": {
+          "value": "{color.brand.500}",
+          "description": "Cor base para foco e realce de elementos ativos."
+        },
+        "opacity": {
+          "value": "{effect.opacity.20}",
+          "description": "Opacidade para foco visivel com reforco da cor de marca."
+        }
+      },
+      "selected": {
+        "color": {
+          "value": "{color.brand.500}",
+          "description": "Cor base para estado selecionado em itens e controles."
+        },
+        "opacity": {
+          "value": "{effect.opacity.20}",
+          "description": "Opacidade para itens selecionados com enfase moderada."
+        }
+      }
+    }
+  }
+}

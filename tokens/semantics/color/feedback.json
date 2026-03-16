@@ -1,0 +1,62 @@
+{
+  "color": {
+    "feedback": {
+      "success": {
+        "background": {
+          "value": "{color.emerald.500}",
+          "description": "Fundo para mensagens e indicadores de sucesso, confirmação e conclusão positiva."
+        },
+        "foreground": {
+          "value": "{color.white}",
+          "description": "Conteúdo sobre feedback de sucesso, priorizando contraste e leitura imediata."
+        },
+        "border": {
+          "value": "{color.emerald.600}",
+          "description": "Contorno para blocos de sucesso quando é útil reforçar separação e hierarquia."
+        }
+      },
+      "warning": {
+        "background": {
+          "value": "{color.amber.500}",
+          "description": "Fundo para alertas, atenção e estados que exigem revisão sem indicar falha crítica."
+        },
+        "foreground": {
+          "value": "{color.white}",
+          "description": "Conteúdo sobre feedback de aviso com contraste forte para leitura rápida."
+        },
+        "border": {
+          "value": "{color.amber.600}",
+          "description": "Contorno para componentes de aviso quando a mensagem precisa de maior delimitação."
+        }
+      },
+      "info": {
+        "background": {
+          "value": "{color.sky.500}",
+          "description": "Fundo para mensagens informativas, status neutros e orientações de sistema."
+        },
+        "foreground": {
+          "value": "{color.white}",
+          "description": "Conteúdo sobre feedback informativo, garantindo leitura clara em fundo azul."
+        },
+        "border": {
+          "value": "{color.sky.600}",
+          "description": "Contorno para blocos informativos quando a mensagem precisa de separação mais evidente."
+        }
+      },
+      "danger": {
+        "background": {
+          "value": "{color.red.500}",
+          "description": "Fundo para erro, risco e ações destrutivas que exigem alta percepção de criticidade."
+        },
+        "foreground": {
+          "value": "{color.white}",
+          "description": "Conteúdo sobre feedback crítico, mantendo leitura imediata em contexto de alerta."
+        },
+        "border": {
+          "value": "{color.red.600}",
+          "description": "Contorno para mensagens de erro e estados destrutivos com maior presença visual."
+        }
+      }
+    }
+  }
+}

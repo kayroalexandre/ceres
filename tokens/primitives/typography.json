@@ -1,0 +1,110 @@
+{
+  "typography": {
+    "fontStyle": {
+      "regular": {
+        "value": "normal",
+        "description": "Estilo padrão para leitura e interface. Deve ser o estado dominante do sistema tipográfico."
+      },
+      "italic": {
+        "value": "italic",
+        "description": "Use para ênfase pontual, termos especiais, citações curtas ou variantes editoriais."
+      }
+    },
+    "fontSize": {
+      "12": {
+        "value": "0.75rem",
+        "description": "Tamanho para meta informação, captions, helper text e elementos secundários."
+      },
+      "14": {
+        "value": "0.875rem",
+        "description": "Tamanho compacto para corpo pequeno, labels e interfaces mais densas."
+      },
+      "16": {
+        "value": "1rem",
+        "description": "Tamanho base de leitura para body padrão e conteúdo principal em tela."
+      },
+      "18": {
+        "value": "1.125rem",
+        "description": "Tamanho de transição entre body e heading, útil para textos de apoio com mais destaque."
+      },
+      "20": {
+        "value": "1.25rem",
+        "description": "Tamanho para subtítulos e headings pequenos com mais presença visual."
+      },
+      "24": {
+        "value": "1.5rem",
+        "description": "Tamanho para headings médios, subtítulos fortes e chamadas internas."
+      },
+      "30": {
+        "value": "1.875rem",
+        "description": "Tamanho de título compacto para páginas e seções importantes."
+      },
+      "36": {
+        "value": "2.25rem",
+        "description": "Tamanho de título base para páginas e blocos editoriais de destaque."
+      },
+      "48": {
+        "value": "3rem",
+        "description": "Tamanho de display para destaques fortes, títulos amplos e pontos de entrada visuais."
+      },
+      "60": {
+        "value": "3.75rem",
+        "description": "Maior tamanho da escala. Use em hero titles e mensagens principais de alto impacto."
+      }
+    },
+    "lineHeight": {
+      "tight": {
+        "value": "1.2",
+        "description": "Entrelinha compacta para títulos e textos curtos com pouca quebra."
+      },
+      "normal": {
+        "value": "1.5",
+        "description": "Entrelinha padrão para leitura em interface e textos corridos de comprimento médio."
+      },
+      "relaxed": {
+        "value": "1.7",
+        "description": "Entrelinha ampliada para leitura longa, blocos editoriais e conteúdos mais densos."
+      }
+    },
+    "fontWeight": {
+      "regular": {
+        "value": "400",
+        "description": "Peso padrão para corpo de texto, subtítulos leves e leitura contínua."
+      },
+      "medium": {
+        "value": "500",
+        "description": "Peso de ênfase moderada para labels, estados ativos e destaques discretos."
+      },
+      "semibold": {
+        "value": "600",
+        "description": "Peso para headings utilitários, chamadas curtas e ações com mais prioridade."
+      },
+      "bold": {
+        "value": "700",
+        "description": "Peso de maior impacto para títulos hero, títulos de página e destaques principais."
+      }
+    },
+    "letterSpacing": {
+      "tighter": {
+        "value": "-0.02em",
+        "description": "Tracking mais fechado para displays e titulos muito grandes."
+      },
+      "tight": {
+        "value": "-0.01em",
+        "description": "Tracking fechado para titulos e headings com mais presenca visual."
+      },
+      "normal": {
+        "value": "0em",
+        "description": "Tracking neutro para leitura geral e tipografia padrao."
+      },
+      "wide": {
+        "value": "0.01em",
+        "description": "Tracking levemente aberto para labels, subtitulos e pequenas interfaces."
+      },
+      "wider": {
+        "value": "0.02em",
+        "description": "Tracking mais aberto para overlines, microcopy e marcacoes utilitarias."
+      }
+    }
+  }
+}

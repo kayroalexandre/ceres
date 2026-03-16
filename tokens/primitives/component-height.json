@@ -1,0 +1,26 @@
+{
+  "size": {
+    "componentHeight": {
+      "28": {
+        "value": "1.75rem",
+        "description": "Altura compacta para controles densos, filtros inline e elementos secundarios."
+      },
+      "32": {
+        "value": "2rem",
+        "description": "Altura pequena para componentes utilitarios e contextos de alta densidade."
+      },
+      "40": {
+        "value": "2.5rem",
+        "description": "Altura base para inputs, selects e botoes no uso geral da interface."
+      },
+      "48": {
+        "value": "3rem",
+        "description": "Altura confortavel para componentes com maior foco em toque e leitura."
+      },
+      "56": {
+        "value": "3.5rem",
+        "description": "Altura ampla para CTAs, barras e elementos com prioridade mais alta."
+      }
+    }
+  }
+}

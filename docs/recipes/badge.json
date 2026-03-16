@@ -1,0 +1,54 @@
+{
+  "component": "badge",
+  "description": "Recipe para badges, pills de estado e pequenos indicadores inline.",
+  "slots": {
+    "container": {
+      "height": "size.componentHeight.dense",
+      "radius": "size.radius.pill",
+      "paddingInline": "size.spacing.inset.sm",
+      "gap": "size.spacing.inline.xs",
+      "borderWidth": "size.borderWidth.subtle"
+    },
+    "label": {
+      "fontFamily": "typography.body.body.fontFamily",
+      "fontSize": "typography.body.body.sizeSmall",
+      "fontWeight": "typography.body.body.fontWeightMedium",
+      "letterSpacing": "typography.letterSpacing.label"
+    },
+    "icon": {
+      "size": "size.icon.inline"
+    }
+  },
+  "variants": {
+    "neutral": {
+      "background": "color.background.surface.subtle",
+      "borderColor": "color.border.subtle",
+      "labelColor": "color.content.secondary",
+      "iconColor": "color.foreground.subtle"
+    },
+    "success": {
+      "background": "color.feedback.success.background",
+      "borderColor": "color.feedback.success.border",
+      "labelColor": "color.feedback.success.foreground",
+      "iconColor": "color.feedback.success.foreground"
+    },
+    "warning": {
+      "background": "color.feedback.warning.background",
+      "borderColor": "color.feedback.warning.border",
+      "labelColor": "color.feedback.warning.foreground",
+      "iconColor": "color.feedback.warning.foreground"
+    },
+    "danger": {
+      "background": "color.feedback.danger.background",
+      "borderColor": "color.feedback.danger.border",
+      "labelColor": "color.feedback.danger.foreground",
+      "iconColor": "color.feedback.danger.foreground"
+    },
+    "info": {
+      "background": "color.feedback.info.background",
+      "borderColor": "color.feedback.info.border",
+      "labelColor": "color.feedback.info.foreground",
+      "iconColor": "color.feedback.info.foreground"
+    }
+  }
+}

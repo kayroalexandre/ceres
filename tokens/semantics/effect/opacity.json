@@ -1,0 +1,18 @@
+{
+  "effect": {
+    "opacity": {
+      "disabled": {
+        "value": "{effect.opacity.40}",
+        "description": "Opacidade recomendada para elementos desabilitados ou com enfase reduzida."
+      },
+      "subtle": {
+        "value": "{effect.opacity.60}",
+        "description": "Opacidade para superficies transparentes suaves e componentes de apoio."
+      },
+      "scrim": {
+        "value": "{effect.opacity.80}",
+        "description": "Opacidade para overlays de bloqueio, foco modal e escurecimento do fundo."
+      }
+    }
+  }
+}

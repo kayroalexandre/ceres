@@ -1,0 +1,64 @@
+{
+  "typography": {
+    "title": {
+      "hero": {
+        "fontFamily": {
+          "value": "{typography.fontFamily.primary}",
+          "description": "Família padrão para títulos hero, priorizando presença visual e legibilidade em tela."
+        },
+        "size": {
+          "value": "{typography.fontSize.60}",
+          "description": "Tamanho principal para hero titles, manchetes amplas e mensagens de alto impacto."
+        },
+        "fontWeight": {
+          "value": "{typography.fontWeight.bold}",
+          "description": "Peso forte para o nível máximo de hierarquia tipográfica da interface."
+        }
+      },
+      "page": {
+        "fontFamily": {
+          "value": "{typography.fontFamily.primary}",
+          "description": "Família para títulos de página, consistente com a navegação e os headings principais."
+        },
+        "sizeSmall": {
+          "value": "{typography.fontSize.30}",
+          "description": "Variação compacta do título de página para breakpoints menores ou layouts densos."
+        },
+        "sizeBase": {
+          "value": "{typography.fontSize.36}",
+          "description": "Tamanho padrão do título de página em contextos desktop ou layouts amplos."
+        },
+        "sizeLarge": {
+          "value": "{typography.fontSize.48}",
+          "description": "Variação expandida do título de página para páginas de destaque ou aberturas editoriais."
+        },
+        "fontWeight": {
+          "value": "{typography.fontWeight.bold}",
+          "description": "Peso principal para reforçar identidade e hierarquia do título de página."
+        }
+      },
+      "subtitle": {
+        "fontFamily": {
+          "value": "{typography.fontFamily.primary}",
+          "description": "Família para subtítulos que acompanham títulos e introduzem contexto adicional."
+        },
+        "sizeSmall": {
+          "value": "{typography.fontSize.20}",
+          "description": "Subtítulo compacto para espaços limitados ou combinações mais discretas."
+        },
+        "sizeBase": {
+          "value": "{typography.fontSize.24}",
+          "description": "Subtítulo padrão para aberturas de seção e introduções curtas."
+        },
+        "sizeLarge": {
+          "value": "{typography.fontSize.30}",
+          "description": "Subtítulo ampliado para composições editoriais e cabeçalhos mais expressivos."
+        },
+        "fontWeight": {
+          "value": "{typography.fontWeight.regular}",
+          "description": "Peso leve para manter contraste hierárquico em relação ao título principal."
+        }
+      }
+    }
+  }
+}

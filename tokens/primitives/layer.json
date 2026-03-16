@@ -1,0 +1,38 @@
+{
+  "layer": {
+    "zIndex": {
+      "0": {
+        "value": "0",
+        "description": "Camada base do fluxo normal da interface."
+      },
+      "10": {
+        "value": "10",
+        "description": "Camada levemente elevada para superficies destacadas."
+      },
+      "100": {
+        "value": "100",
+        "description": "Camada para elementos fixos e navegacao persistente."
+      },
+      "200": {
+        "value": "200",
+        "description": "Camada para dropdowns, popovers pequenos e menus flutuantes."
+      },
+      "300": {
+        "value": "300",
+        "description": "Camada para overlays e bloqueios de fundo."
+      },
+      "400": {
+        "value": "400",
+        "description": "Camada para modais e superficies temporarias de maior prioridade."
+      },
+      "500": {
+        "value": "500",
+        "description": "Camada para toasts e feedbacks flutuantes."
+      },
+      "600": {
+        "value": "600",
+        "description": "Camada para tooltips e affordances acima de modais."
+      }
+    }
+  }
+}

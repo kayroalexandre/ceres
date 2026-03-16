@@ -1,0 +1,26 @@
+{
+  "layout": {
+    "breakpoint": {
+      "mobile": {
+        "value": "{layout.breakpoint.480}",
+        "description": "Ponto de quebra para telas compactas e conteudo mobile."
+      },
+      "tablet": {
+        "value": "{layout.breakpoint.768}",
+        "description": "Ponto de quebra para tablet e layouts intermediarios."
+      },
+      "desktop": {
+        "value": "{layout.breakpoint.1024}",
+        "description": "Ponto de quebra para desktop e aplicacoes com mais espaco."
+      },
+      "wide": {
+        "value": "{layout.breakpoint.1280}",
+        "description": "Ponto de quebra para desktops amplos e paginas principais."
+      },
+      "ultraWide": {
+        "value": "{layout.breakpoint.1440}",
+        "description": "Ponto de quebra para experiencias expandidas e grandes paineis."
+      }
+    }
+  }
+}

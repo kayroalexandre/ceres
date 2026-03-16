@@ -1,0 +1,18 @@
+{
+  "effect": {
+    "shadow": {
+      "sm": {
+        "value": "0px 0px 1px 0px rgba(0, 0, 0, 0.04), 0px 1px 1px 0px rgba(0, 0, 0, 0.04), 0px 2px 2px 0px rgba(0, 0, 0, 0.04)",
+        "description": "Sombra leve para elementos pequenos como botoes, tooltips e superficies discretas."
+      },
+      "md": {
+        "value": "0px 0px 1px 0px rgba(0, 0, 0, 0.05), 0px 1px 1px 0px rgba(0, 0, 0, 0.05), 0px 2px 2px 0px rgba(0, 0, 0, 0.05), 0px 4px 4px 0px rgba(0, 0, 0, 0.05), 0px 8px 8px 0px rgba(0, 0, 0, 0.05), 0px 16px 16px 0px rgba(0, 0, 0, 0.05)",
+        "description": "Sombra intermediaria para cards, dropdowns e superficies com elevacao moderada."
+      },
+      "lg": {
+        "value": "0px 0px 1px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px -0.5px rgba(0, 0, 0, 0.06), 0px 3px 3px -1.5px rgba(0, 0, 0, 0.06), 0px 6px 6px -3px rgba(0, 0, 0, 0.06), 0px 12px 12px -6px rgba(0, 0, 0, 0.06), 0px 24px 24px -12px rgba(0, 0, 0, 0.06)",
+        "description": "Sombra ampla para modais, paineis elevados e camadas com maior profundidade."
+      }
+    }
+  }
+}

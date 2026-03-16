@@ -1,0 +1,18 @@
+{
+  "typography": {
+    "fontFamily": {
+      "primary": {
+        "value": "\"Inter\", system-ui, sans-serif",
+        "description": "Família principal da marca para títulos, subtítulos e destaques."
+      },
+      "secondary": {
+        "value": "\"Inter\", system-ui, sans-serif",
+        "description": "Família secundária da marca para corpo de texto, interface e conteúdos utilitários."
+      },
+      "mono": {
+        "value": "\"Roboto Mono\", \"SFMono-Regular\", monospace",
+        "description": "Família monoespaçada da marca para código, identificadores e dados técnicos."
+      }
+    }
+  }
+}

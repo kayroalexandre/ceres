@@ -1,0 +1,38 @@
+{
+  "effect": {
+    "opacity": {
+      "0": {
+        "value": "0",
+        "description": "Sem opacidade visivel. Use para estados ocultos ou transicoes de fade."
+      },
+      "5": {
+        "value": "0.05",
+        "description": "Opacidade minima para hairlines, overlays quase imperceptiveis e texturas sutis."
+      },
+      "10": {
+        "value": "0.1",
+        "description": "Opacidade leve para superfícies transparentes, sombras de apoio e camadas discretas."
+      },
+      "20": {
+        "value": "0.2",
+        "description": "Opacidade suave para overlays leves, controles translúcidos e divisões pouco marcadas."
+      },
+      "40": {
+        "value": "0.4",
+        "description": "Opacidade media para estados desabilitados, efeitos de vidro e conteúdos com menor enfase."
+      },
+      "60": {
+        "value": "0.6",
+        "description": "Opacidade alta para camadas de apoio, scrims suaves e superfícies translúcidas evidentes."
+      },
+      "80": {
+        "value": "0.8",
+        "description": "Opacidade forte para scrims, overlays de foco e bloqueios visuais com maior presenca."
+      },
+      "100": {
+        "value": "1",
+        "description": "Totalmente opaco. Use quando nao houver transparencia."
+      }
+    }
+  }
+}

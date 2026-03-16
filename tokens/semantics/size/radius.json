@@ -1,0 +1,30 @@
+{
+  "size": {
+    "radius": {
+      "interactive": {
+        "sm": {
+          "value": "{size.radius.4}",
+          "description": "Raio para controles compactos, campos pequenos e botões discretos."
+        },
+        "md": {
+          "value": "{size.radius.8}",
+          "description": "Raio padrão para a maioria dos elementos interativos e componentes de ação."
+        }
+      },
+      "surface": {
+        "sm": {
+          "value": "{size.radius.8}",
+          "description": "Raio para superfícies menores, como cards compactos, inputs agrupados e containers utilitários."
+        },
+        "md": {
+          "value": "{size.radius.16}",
+          "description": "Raio para superfícies amplas, modais, painéis e cards com maior protagonismo."
+        }
+      },
+      "pill": {
+        "value": "{size.radius.9999}",
+        "description": "Raio total para chips, badges, toggles, avatares e componentes em formato cápsula."
+      }
+    }
+  }
+}

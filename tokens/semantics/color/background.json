@@ -1,0 +1,38 @@
+{
+  "color": {
+    "background": {
+      "canvas": {
+        "default": {
+          "value": "{color.white}",
+          "description": "Plano de fundo base da aplicação ou página, usado atrás de toda a interface."
+        }
+      },
+      "surface": {
+        "default": {
+          "value": "{color.gray.50}",
+          "description": "Superfície principal para cards, painéis e containers apoiados sobre o canvas."
+        },
+        "subtle": {
+          "value": "{color.gray.100}",
+          "description": "Variação de superfície para diferenciar camadas próximas sem criar contraste forte."
+        }
+      },
+      "inverse": {
+        "default": {
+          "value": "{color.slate.950}",
+          "description": "Superfície escura para modos invertidos, sobreposições fortes e contextos noturnos."
+        },
+        "subtle": {
+          "value": "{color.slate.900}",
+          "description": "Variação escura mais suave para separar camadas internas dentro de contextos invertidos."
+        }
+      },
+      "brand": {
+        "default": {
+          "value": "{color.brand.500}",
+          "description": "Fundo de destaque da marca para áreas institucionais, CTAs e elementos de alta ênfase."
+        }
+      }
+    }
+  }
+}

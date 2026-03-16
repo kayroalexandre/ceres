@@ -1,0 +1,22 @@
+{
+  "size": {
+    "radius": {
+      "4": {
+        "value": "0.25rem",
+        "description": "Raio compacto para controles pequenos, campos densos e componentes utilitarios."
+      },
+      "8": {
+        "value": "0.5rem",
+        "description": "Raio padrao para botoes, inputs, menus e a maioria dos componentes interativos."
+      },
+      "16": {
+        "value": "1rem",
+        "description": "Raio amplo para cards, paineis, drawers e superficies com mais destaque visual."
+      },
+      "9999": {
+        "value": "9999px",
+        "description": "Raio total para pills, chips, badges, toggles e elementos totalmente arredondados."
+      }
+    }
+  }
+}

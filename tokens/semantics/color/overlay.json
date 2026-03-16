@@ -1,0 +1,26 @@
+{
+  "color": {
+    "overlay": {
+      "subtle": {
+        "color": {
+          "value": "{color.black}",
+          "description": "Cor base de overlay suave para escurecimento leve do fundo."
+        },
+        "opacity": {
+          "value": "{effect.opacity.subtle}",
+          "description": "Opacidade do overlay suave para drawers, side panels e foco moderado."
+        }
+      },
+      "scrim": {
+        "color": {
+          "value": "{color.black}",
+          "description": "Cor base do scrim para modais, dialogos e bloqueio de fundo."
+        },
+        "opacity": {
+          "value": "{effect.opacity.scrim}",
+          "description": "Opacidade do scrim para escurecimento mais forte do fundo."
+        }
+      }
+    }
+  }
+}

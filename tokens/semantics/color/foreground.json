@@ -1,0 +1,40 @@
+{
+  "color": {
+    "foreground": {
+      "default": {
+        "value": "{color.gray.700}",
+        "description": "Cor padrão para ícones, elementos gráficos e foreground em superfícies claras."
+      },
+      "subtle": {
+        "value": "{color.gray.500}",
+        "description": "Foreground de menor contraste para elementos decorativos ou de apoio."
+      },
+      "inactive": {
+        "value": "{color.gray.500}",
+        "description": "Foreground para ícones e sinais visuais em elementos inativos, com ênfase reduzida."
+      },
+      "disabled": {
+        "value": "{color.gray.400}",
+        "description": "Foreground para ícones e affordances desabilitados, indicando indisponibilidade sem chamar atenção."
+      },
+      "inverse": {
+        "value": "{color.white}",
+        "description": "Foreground para uso sobre superfícies escuras ou fundos de marca com alto contraste."
+      },
+      "inverse-subtle": {
+        "value": "{color.slate.400}",
+        "description": "Foreground suave para estados secundários dentro de contextos escuros."
+      },
+      "inverse-disabled": {
+        "value": "{color.slate.400}",
+        "description": "Foreground para ícones e sinais desabilitados em contextos escuros."
+      },
+      "brand": {
+        "default": {
+          "value": "{color.brand.600}",
+          "description": "Foreground de marca para ícones e sinais visuais associados ao brand core."
+        }
+      }
+    }
+  }
+}

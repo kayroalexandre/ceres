@@ -1,0 +1,44 @@
+{
+  "motion": {
+    "transition": {
+      "hover": {
+        "duration": {
+          "value": "{motion.duration.fast}",
+          "description": "Duracao recomendada para hover e resposta imediata em componentes."
+        },
+        "easing": {
+          "value": "{motion.easing.default}",
+          "description": "Curva padrao para feedbacks rapidos de hover."
+        }
+      },
+      "dialog": {
+        "enterDuration": {
+          "value": "{motion.duration.moderate}",
+          "description": "Duracao de entrada para dialogos, drawers e modais."
+        },
+        "exitDuration": {
+          "value": "{motion.duration.fast}",
+          "description": "Duracao de saida para dialogos e superficies temporarias."
+        },
+        "enterEasing": {
+          "value": "{motion.easing.enter}",
+          "description": "Curva de entrada para superficies que surgem com suavidade."
+        },
+        "exitEasing": {
+          "value": "{motion.easing.exit}",
+          "description": "Curva de saida para fechamento rapido e claro."
+        }
+      },
+      "page": {
+        "duration": {
+          "value": "{motion.duration.slow}",
+          "description": "Duracao para transicoes de pagina ou mudancas maiores de contexto."
+        },
+        "easing": {
+          "value": "{motion.easing.emphasis}",
+          "description": "Curva expressiva para transicoes mais marcantes de tela."
+        }
+      }
+    }
+  }
+}

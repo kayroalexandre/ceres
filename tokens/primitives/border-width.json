@@ -1,0 +1,18 @@
+{
+  "size": {
+    "borderWidth": {
+      "1": {
+        "value": "1px",
+        "description": "Espessura minima para divisorias, hairlines e contornos discretos."
+      },
+      "2": {
+        "value": "2px",
+        "description": "Espessura base para bordas mais perceptiveis, foco e estados destacados."
+      },
+      "4": {
+        "value": "4px",
+        "description": "Espessura forte para acentos, barras de destaque e tratamentos mais expressivos."
+      }
+    }
+  }
+}

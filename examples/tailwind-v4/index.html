@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cerex Tailwind v4 Example</title>
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body class="min-h-screen bg-canvas text-content-primary">
+    <main class="mx-auto flex max-w-6xl flex-col gap-10 px-6 py-10">
+      <header class="flex flex-col gap-3">
+        <span class="inline-flex w-fit rounded-pill border border-line-subtle bg-surface-subtle px-3 py-1 text-body-sm text-content-secondary">
+          Cerex tokens + Tailwind v4
+        </span>
+        <h1 class="text-title-page font-title-page tracking-title text-content-primary">
+          Product consumption example
+        </h1>
+        <p class="max-w-3xl text-body-md text-content-secondary">
+          Minimal fixture showing how the generated theme can drive real UI pieces with utilities.
+        </p>
+      </header>
+
+      <section class="grid gap-6 lg:grid-cols-2">
+        <div class="rounded-surface-md border border-line-subtle bg-surface p-6 shadow-sm">
+          <h2 class="mb-4 text-heading font-heading tracking-heading text-content-primary">Buttons</h2>
+          <div class="flex flex-wrap gap-3">
+            <button class="inline-flex h-[var(--size-component-height-default)] items-center gap-2 rounded-interactive-md bg-action-primary px-4 text-body-md text-on-action-primary shadow-sm transition duration-[var(--motion-duration-fast)] ease-[var(--motion-transition-hover-easing)] hover:bg-action-primary-hover">
+              Primary
+            </button>
+            <button class="inline-flex h-[var(--size-component-height-default)] items-center gap-2 rounded-interactive-md border border-line-subtle bg-action-neutral px-4 text-body-md text-on-action-neutral shadow-sm transition duration-[var(--motion-duration-fast)] ease-[var(--motion-transition-hover-easing)] hover:bg-action-neutral-hover">
+              Neutral
+            </button>
+            <button class="inline-flex h-[var(--size-component-height-default)] items-center gap-2 rounded-interactive-md bg-action-disabled px-4 text-body-md text-on-action-disabled shadow-sm">
+              Disabled
+            </button>
+          </div>
+        </div>
+
+        <div class="rounded-surface-md border border-line-subtle bg-surface p-6 shadow-sm">
+          <h2 class="mb-4 text-heading font-heading tracking-heading text-content-primary">Input</h2>
+          <label class="mb-2 block text-body-sm text-content-secondary">Email</label>
+          <div class="flex h-[var(--size-component-height-default)] items-center gap-3 rounded-interactive-md border border-line-subtle bg-surface px-4 text-content-primary shadow-sm">
+            <span class="text-icon-subtle">@"</span>
+            <input class="w-full bg-transparent text-body-md text-content-primary outline-none placeholder:text-content-secondary" placeholder="name@company.com" />
+          </div>
+        </div>
+      </section>
+
+      <section class="grid gap-6 lg:grid-cols-[1.5fr_1fr]">
+        <article class="rounded-surface-md border border-line-subtle bg-surface p-6 shadow-sm">
+          <h2 class="mb-2 text-heading font-heading tracking-heading text-content-primary">Card</h2>
+          <p class="mb-6 text-body-md text-content-secondary">
+            Cards use surface tokens, line tokens and semantic typography roles instead of raw values.
+          </p>
+          <div class="rounded-surface-md border border-line-strong bg-surface-subtle p-5 shadow-md">
+            <h3 class="mb-2 text-heading font-heading tracking-heading text-content-primary">Raised surface</h3>
+            <p class="text-body-sm text-content-secondary">
+              This nested surface demonstrates the semantic distinction between `surface` and `surface-subtle`.
+            </p>
+          </div>
+        </article>
+
+        <aside class="rounded-surface-md border border-line-subtle bg-surface p-6 shadow-lg">
+          <div class="mb-4 h-2 w-16 rounded-pill bg-brand"></div>
+          <h2 class="mb-2 text-title-subtitle font-title-subtitle tracking-title text-content-primary">Modal</h2>
+          <p class="mb-5 text-body-sm text-content-secondary">
+            Overlay, surface, shadow and dialog motion tokens combine here for a temporary elevated layer.
+          </p>
+          <div class="flex gap-3">
+            <button class="rounded-interactive-md bg-action-primary px-4 py-2 text-body-sm text-on-action-primary">Confirm</button>
+            <button class="rounded-interactive-md border border-line-subtle bg-action-neutral px-4 py-2 text-body-sm text-on-action-neutral">Cancel</button>
+          </div>
+        </aside>
+      </section>
+
+      <section class="grid gap-6 lg:grid-cols-2">
+        <div class="rounded-surface-md border border-line-subtle bg-surface p-6 shadow-sm">
+          <h2 class="mb-4 text-heading font-heading tracking-heading text-content-primary">Badges</h2>
+          <div class="flex flex-wrap gap-3">
+            <span class="inline-flex items-center gap-2 rounded-pill border border-line-subtle bg-surface-subtle px-3 py-1 text-body-sm text-content-secondary">Neutral</span>
+            <span class="inline-flex items-center gap-2 rounded-pill border border-line-success bg-success px-3 py-1 text-body-sm text-on-success">Success</span>
+            <span class="inline-flex items-center gap-2 rounded-pill border border-line-warning bg-warning px-3 py-1 text-body-sm text-on-warning">Warning</span>
+            <span class="inline-flex items-center gap-2 rounded-pill border border-line-danger bg-danger px-3 py-1 text-body-sm text-on-danger">Danger</span>
+            <span class="inline-flex items-center gap-2 rounded-pill border border-line-info bg-info px-3 py-1 text-body-sm text-on-info">Info</span>
+          </div>
+        </div>
+
+        <div class="rounded-surface-md border border-line-subtle bg-surface p-6 shadow-sm">
+          <h2 class="mb-4 text-heading font-heading tracking-heading text-content-primary">Toast</h2>
+          <div class="rounded-surface-md border border-line-success bg-success p-4 shadow-md">
+            <div class="mb-1 text-heading-subheading-md font-heading-subheading text-on-success">Saved successfully</div>
+            <p class="text-body-sm text-on-success">
+              Toasts can consume the feedback tokens directly without inventing a separate color layer.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

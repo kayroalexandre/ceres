@@ -1,0 +1,22 @@
+{
+  "size": {
+    "componentHeight": {
+      "dense": {
+        "value": "{size.componentHeight.32}",
+        "description": "Altura para controles compactos em tabelas, filtros e toolbars densas."
+      },
+      "default": {
+        "value": "{size.componentHeight.40}",
+        "description": "Altura base para componentes interativos no uso geral."
+      },
+      "comfortable": {
+        "value": "{size.componentHeight.48}",
+        "description": "Altura para componentes com mais conforto visual e area de toque ampliada."
+      },
+      "touch": {
+        "value": "{size.componentHeight.56}",
+        "description": "Altura para acoes principais e contextos com prioridade maior de toque."
+      }
+    }
+  }
+}
