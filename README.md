@@ -17,6 +17,29 @@ Scripts de release:
 - `npm run prepack`: executa a cadeia oficial antes do empacotamento
 - `npm run pack:check`: inspeciona o tarball final com `npm pack --dry-run`
 
+## Release Automatizada
+
+O repositório inclui workflow de publish em GitHub Actions em `.github/workflows/publish.yml`.
+
+Como configurar:
+
+- adicione o secret `NPM_TOKEN` nas settings do repositório no GitHub
+- esse token precisa ter permissão para publicar `@ceres/design-tokens` no npm
+- o workflow publica automaticamente quando uma tag no formato `v*` e enviada
+- o workflow tambem pode ser executado manualmente em `Actions > Publish Package`
+
+Fluxo recomendado de release:
+
+```bash
+npm version patch
+git push origin main --follow-tags
+```
+
+Regra de seguranca do workflow:
+
+- se a tag for `v0.1.1`, o `package.json` precisa estar com `"version": "0.1.1"`
+- se os valores divergirem, o publish falha antes de enviar qualquer pacote
+
 ## Arquitetura
 
 - `tokens/primitives`: foundations brutas do sistema, como paletas base, spacing, radius, fontSize, fontWeight, lineHeight, fontStyle, opacity, blur, motion, layout, layer e escalas dimensionais auxiliares.
