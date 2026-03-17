@@ -92,15 +92,15 @@ async function main() {
       errors.push(`${output.brand}/${output.mode} nao expõe runtimeModule coerente no manifesto.`);
     }
 
-    if (output.packageCssImport !== `@ceres/design-tokens/${output.brand}/${output.mode}.css`) {
+    if (output.packageCssImport !== `@ceres_design_system/design-tokens/${output.brand}/${output.mode}.css`) {
       errors.push(`${output.brand}/${output.mode} nao expõe packageCssImport coerente no manifesto.`);
     }
 
-    if (output.packageJsonImport !== `@ceres/design-tokens/${output.brand}/${output.mode}.json`) {
+    if (output.packageJsonImport !== `@ceres_design_system/design-tokens/${output.brand}/${output.mode}.json`) {
       errors.push(`${output.brand}/${output.mode} nao expõe packageJsonImport coerente no manifesto.`);
     }
 
-    if (output.packageRuntimeImport !== `@ceres/design-tokens/${output.brand}/${output.mode}`) {
+    if (output.packageRuntimeImport !== `@ceres_design_system/design-tokens/${output.brand}/${output.mode}`) {
       errors.push(`${output.brand}/${output.mode} nao expõe packageRuntimeImport coerente no manifesto.`);
     }
 

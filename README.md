@@ -4,7 +4,7 @@ Base de Design Tokens agnostica organizada no fluxo `primitives > brand > semant
 
 ## Publicação
 
-O pacote esta preparado para publicação no npm público como `@ceres/design-tokens`.
+O pacote esta preparado para publicação no npm público como `@ceres_design_system/design-tokens`.
 
 Princípios de distribuição:
 
@@ -23,7 +23,7 @@ O repositório inclui workflow de publish em GitHub Actions em `.github/workflow
 
 Como configurar:
 
-- no npm, abra as settings do pacote `@ceres/design-tokens`
+- no npm, abra as settings do pacote `@ceres_design_system/design-tokens`
 - em `Trusted publishing`, conecte `GitHub Actions`
 - informe `kayroalexandre` como owner/user
 - informe `ceres` como repository
@@ -74,15 +74,15 @@ O source of truth continua semantico. A abreviacao de nomes acontece apenas na e
 
 Subpaths públicos de consumo:
 
-- `@ceres/design-tokens/ceres/light`
-- `@ceres/design-tokens/ceres/light.css`
-- `@ceres/design-tokens/ceres/light.json`
+- `@ceres_design_system/design-tokens/ceres/light`
+- `@ceres_design_system/design-tokens/ceres/light.css`
+- `@ceres_design_system/design-tokens/ceres/light.json`
 - equivalentes para `ceres/dark`, `eris/light`, `eris/dark`, `pluto/light`, `pluto/dark`
-- `@ceres/design-tokens/manifest`
-- `@ceres/design-tokens/manifest.json`
-- `@ceres/design-tokens/contract`
-- `@ceres/design-tokens/recipes/<component>`
-- `@ceres/design-tokens/recipes/<component>.json`
+- `@ceres_design_system/design-tokens/manifest`
+- `@ceres_design_system/design-tokens/manifest.json`
+- `@ceres_design_system/design-tokens/contract`
+- `@ceres_design_system/design-tokens/recipes/<component>`
+- `@ceres_design_system/design-tokens/recipes/<component>.json`
 
 ## Build e Distribuicao
 
@@ -132,14 +132,14 @@ npm install -D style-dictionary
 Instalacao esperada no app consumidor:
 
 ```bash
-npm install @ceres/design-tokens
+npm install @ceres_design_system/design-tokens
 ```
 
 Uso em `app/globals.css` de um projeto Next.js:
 
 ```css
 @import "tailwindcss";
-@import "@ceres/design-tokens/ceres/light.css";
+@import "@ceres_design_system/design-tokens/ceres/light.css";
 ```
 
 O build usa mapeamento automático com base nos paths públicos reais dos tokens:
@@ -185,14 +185,14 @@ Exemplo minimo oficial:
 O pacote tambem expõe wrappers JS leves para evitar atrito com import de JSON em runtime:
 
 ```ts
-import tokens from "@ceres/design-tokens/ceres/light";
-import manifest from "@ceres/design-tokens/manifest";
+import tokens from "@ceres_design_system/design-tokens/ceres/light";
+import manifest from "@ceres_design_system/design-tokens/manifest";
 ```
 
 Exemplo de uso com motion no app consumidor:
 
 ```ts
-import tokens from "@ceres/design-tokens/ceres/light";
+import tokens from "@ceres_design_system/design-tokens/ceres/light";
 
 const transition = {
   duration: Number.parseFloat(tokens.motion.duration.fast) / 1000,
@@ -217,12 +217,12 @@ Esses arquivos respondem “quais tokens usar em um componente real?” sem tran
 
 Subpaths equivalentes para runtime:
 
-- `@ceres/design-tokens/recipes/button`
-- `@ceres/design-tokens/recipes/input`
-- `@ceres/design-tokens/recipes/card`
-- `@ceres/design-tokens/recipes/modal`
-- `@ceres/design-tokens/recipes/badge`
-- `@ceres/design-tokens/recipes/toast`
+- `@ceres_design_system/design-tokens/recipes/button`
+- `@ceres_design_system/design-tokens/recipes/input`
+- `@ceres_design_system/design-tokens/recipes/card`
+- `@ceres_design_system/design-tokens/recipes/modal`
+- `@ceres_design_system/design-tokens/recipes/badge`
+- `@ceres_design_system/design-tokens/recipes/toast`
 
 ## Uso Pratico de Tokens
 

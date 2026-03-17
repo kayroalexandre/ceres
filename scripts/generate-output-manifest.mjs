@@ -17,7 +17,7 @@ function normalizePath(...segments) {
 function buildThemeEntry(themeDefinition) {
   const { brand, mode } = themeDefinition;
   const basePath = normalizePath("dist", brand, mode);
-  const publicBasePath = `@ceres/design-tokens/${brand}/${mode}`;
+  const publicBasePath = `@ceres_design_system/design-tokens/${brand}/${mode}`;
 
   return {
     brand,

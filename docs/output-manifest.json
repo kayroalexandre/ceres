@@ -10,9 +10,9 @@
       "themeCss": "dist/ceres/light/theme.css",
       "tokensJson": "dist/ceres/light/tokens.json",
       "runtimeModule": "dist/ceres/light/index.js",
-      "packageCssImport": "@ceres/design-tokens/ceres/light.css",
-      "packageJsonImport": "@ceres/design-tokens/ceres/light.json",
-      "packageRuntimeImport": "@ceres/design-tokens/ceres/light"
+      "packageCssImport": "@ceres_design_system/design-tokens/ceres/light.css",
+      "packageJsonImport": "@ceres_design_system/design-tokens/ceres/light.json",
+      "packageRuntimeImport": "@ceres_design_system/design-tokens/ceres/light"
     },
     {
       "brand": "ceres",
@@ -20,9 +20,9 @@
       "themeCss": "dist/ceres/dark/theme.css",
       "tokensJson": "dist/ceres/dark/tokens.json",
       "runtimeModule": "dist/ceres/dark/index.js",
-      "packageCssImport": "@ceres/design-tokens/ceres/dark.css",
-      "packageJsonImport": "@ceres/design-tokens/ceres/dark.json",
-      "packageRuntimeImport": "@ceres/design-tokens/ceres/dark"
+      "packageCssImport": "@ceres_design_system/design-tokens/ceres/dark.css",
+      "packageJsonImport": "@ceres_design_system/design-tokens/ceres/dark.json",
+      "packageRuntimeImport": "@ceres_design_system/design-tokens/ceres/dark"
     },
     {
       "brand": "eris",
@@ -30,9 +30,9 @@
       "themeCss": "dist/eris/light/theme.css",
       "tokensJson": "dist/eris/light/tokens.json",
       "runtimeModule": "dist/eris/light/index.js",
-      "packageCssImport": "@ceres/design-tokens/eris/light.css",
-      "packageJsonImport": "@ceres/design-tokens/eris/light.json",
-      "packageRuntimeImport": "@ceres/design-tokens/eris/light"
+      "packageCssImport": "@ceres_design_system/design-tokens/eris/light.css",
+      "packageJsonImport": "@ceres_design_system/design-tokens/eris/light.json",
+      "packageRuntimeImport": "@ceres_design_system/design-tokens/eris/light"
     },
     {
       "brand": "eris",
@@ -40,9 +40,9 @@
       "themeCss": "dist/eris/dark/theme.css",
       "tokensJson": "dist/eris/dark/tokens.json",
       "runtimeModule": "dist/eris/dark/index.js",
-      "packageCssImport": "@ceres/design-tokens/eris/dark.css",
-      "packageJsonImport": "@ceres/design-tokens/eris/dark.json",
-      "packageRuntimeImport": "@ceres/design-tokens/eris/dark"
+      "packageCssImport": "@ceres_design_system/design-tokens/eris/dark.css",
+      "packageJsonImport": "@ceres_design_system/design-tokens/eris/dark.json",
+      "packageRuntimeImport": "@ceres_design_system/design-tokens/eris/dark"
     },
     {
       "brand": "pluto",
@@ -50,9 +50,9 @@
       "themeCss": "dist/pluto/light/theme.css",
       "tokensJson": "dist/pluto/light/tokens.json",
       "runtimeModule": "dist/pluto/light/index.js",
-      "packageCssImport": "@ceres/design-tokens/pluto/light.css",
-      "packageJsonImport": "@ceres/design-tokens/pluto/light.json",
-      "packageRuntimeImport": "@ceres/design-tokens/pluto/light"
+      "packageCssImport": "@ceres_design_system/design-tokens/pluto/light.css",
+      "packageJsonImport": "@ceres_design_system/design-tokens/pluto/light.json",
+      "packageRuntimeImport": "@ceres_design_system/design-tokens/pluto/light"
     },
     {
       "brand": "pluto",
@@ -60,9 +60,9 @@
       "themeCss": "dist/pluto/dark/theme.css",
       "tokensJson": "dist/pluto/dark/tokens.json",
       "runtimeModule": "dist/pluto/dark/index.js",
-      "packageCssImport": "@ceres/design-tokens/pluto/dark.css",
-      "packageJsonImport": "@ceres/design-tokens/pluto/dark.json",
-      "packageRuntimeImport": "@ceres/design-tokens/pluto/dark"
+      "packageCssImport": "@ceres_design_system/design-tokens/pluto/dark.css",
+      "packageJsonImport": "@ceres_design_system/design-tokens/pluto/dark.json",
+      "packageRuntimeImport": "@ceres_design_system/design-tokens/pluto/dark"
     }
   ]
 }
