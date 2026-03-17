@@ -23,14 +23,12 @@ O repositório inclui workflow de publish em GitHub Actions em `.github/workflow
 
 Como configurar:
 
-- no npm, abra as settings do pacote `@ceres_design_system/design-tokens`
-- em `Trusted publishing`, conecte `GitHub Actions`
-- informe `kayroalexandre` como owner/user
-- informe `ceres` como repository
-- informe `publish.yml` como workflow filename
+- gere um `Granular Access Token` no npm com permissao de `Read and write`
+- habilite `Bypass 2FA` no token, se a org exigir isso para publish
+- salve esse token como secret `NPM_TOKEN` em `GitHub > Settings > Secrets and variables > Actions`
 - o workflow publica automaticamente quando uma tag no formato `v*` e enviada
 - o workflow tambem pode ser executado manualmente em `Actions > Publish Package`
-- com trusted publishing, nao e necessario armazenar `NPM_TOKEN` no GitHub
+- o workflow usa `NODE_AUTH_TOKEN` a partir do secret `NPM_TOKEN`
 
 Fluxo recomendado de release:
 
@@ -43,7 +41,7 @@ Regra de seguranca do workflow:
 
 - se a tag for `v0.1.1`, o `package.json` precisa estar com `"version": "0.1.1"`
 - se os valores divergirem, o publish falha antes de enviar qualquer pacote
-- depois de validar o fluxo OIDC, a recomendacao do npm e restringir tokens tradicionais de publish para reduzir superficie de ataque
+- se o npm da org exigir 2FA para publish, o token precisa ter `Bypass 2FA`
 
 ## Arquitetura
 
