@@ -81,6 +81,7 @@ function renderQuickUseSection() {
     "- `color.content.primary` -> `--color-content-primary` -> `text-content-primary`",
     "- `color.border.subtle` -> `--color-line-subtle` -> `border-line-subtle`",
     "- `color.feedback.success.foreground` -> `--color-on-success` -> `text-on-success`",
+    "- `color.material.glass.surface` -> `--color-material-glass-surface` -> `bg-material-glass-surface`",
     "",
     "### Typography",
     "",
@@ -88,12 +89,13 @@ function renderQuickUseSection() {
     "- `typography.title.page.sizeBase` -> `--text-title-page` -> `text-title-page`",
     "- `typography.body.body.fontFamily` -> `--font-body` -> `font-body`",
     "",
-    "### Effects and Layout",
+    "### Effects, Motion and Layout",
     "",
     "- `effect.shadow.md` -> `--shadow-md` -> `shadow-md`",
+    "- `effect.blur.surface.glass` -> `--blur-surface-glass` -> `backdrop-blur-[var(--blur-surface-glass)]`",
     "- `size.radius.surface.md` -> `--radius-surface-md` -> `rounded-surface-md`",
     "- `layout.container.page` -> `--container-page` -> `max-w-page`",
-    "- `motion.duration.fast` -> `var(--motion-duration-fast)` em classes arbitrarias",
+    "- `motion.transition.press.duration` -> `var(--motion-transition-press-duration)` em classes arbitrarias",
     ""
   ].join("\n");
 }

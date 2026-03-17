@@ -1,6 +1,16 @@
 {
   "motion": {
     "transition": {
+      "press": {
+        "duration": {
+          "value": "{motion.duration.quick}",
+          "description": "Duracao para press, tap e microajustes de escala ou profundidade."
+        },
+        "easing": {
+          "value": "{motion.easing.default}",
+          "description": "Curva padrao para feedbacks de press sem atraso perceptivel."
+        }
+      },
       "hover": {
         "duration": {
           "value": "{motion.duration.fast}",
@@ -37,6 +47,16 @@
         "easing": {
           "value": "{motion.easing.emphasis}",
           "description": "Curva expressiva para transicoes mais marcantes de tela."
+        }
+      },
+      "emphasis": {
+        "duration": {
+          "value": "{motion.duration.emphasis}",
+          "description": "Duracao para movimentos de maior protagonismo visual dentro da interface."
+        },
+        "easing": {
+          "value": "{motion.easing.emphasis}",
+          "description": "Curva para entradas e saidas mais dramaticas, sem perder o controle visual."
         }
       }
     }

@@ -28,3 +28,6 @@ Exemplos:
 - `border-line-subtle`
 - `text-on-success`
 - `shadow-md`
+- `bg-material-glass-surface`
+- `border-material-glass-border`
+- `backdrop-blur-[var(--blur-surface-glass)]`

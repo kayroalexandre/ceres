@@ -49,6 +49,24 @@
         "stateLayerColor": "color.stateLayer.selected.color",
         "stateLayerOpacity": "color.stateLayer.selected.opacity"
       }
+    },
+    "glass": {
+      "default": {
+        "background": "color.material.glass.surface",
+        "borderColor": "color.material.glass.border",
+        "borderHighlight": "color.material.glass.highlight",
+        "backdropBlur": "effect.blur.surface.glass",
+        "shadow": "effect.shadow.md",
+        "titleColor": "color.content.primary",
+        "bodyColor": "color.content.secondary"
+      },
+      "elevated": {
+        "background": "color.material.glass.surfaceStrong",
+        "borderColor": "color.material.glass.border",
+        "borderHighlight": "color.material.glass.highlight",
+        "backdropBlur": "effect.blur.surface.strong",
+        "shadow": "effect.shadow.lg"
+      }
     }
   },
   "motion": {

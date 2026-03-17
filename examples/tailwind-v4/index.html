@@ -33,6 +33,9 @@
             <button class="inline-flex h-[var(--size-component-height-default)] items-center gap-2 rounded-interactive-md bg-action-disabled px-4 text-body-md text-on-action-disabled shadow-sm">
               Disabled
             </button>
+            <button class="glass-button inline-flex h-[var(--size-component-height-default)] items-center gap-2 px-4 text-body-md text-content-primary">
+              Glass
+            </button>
           </div>
         </div>
 
@@ -44,6 +47,35 @@
             <input class="w-full bg-transparent text-body-md text-content-primary outline-none placeholder:text-content-secondary" placeholder="name@company.com" />
           </div>
         </div>
+      </section>
+
+      <section class="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
+        <article class="glass-panel p-6">
+          <span class="mb-4 inline-flex w-fit rounded-pill border border-material-glass-border bg-material-glass-surface-soft px-3 py-1 text-body-sm text-content-secondary backdrop-blur-[var(--blur-level-sm)]">
+            Composition tokens
+          </span>
+          <h2 class="mb-3 text-title-subtitle font-title-subtitle tracking-title text-content-primary">Glass surfaces without leaving the contract</h2>
+          <p class="mb-6 max-w-2xl text-body-md text-content-secondary">
+            Material, blur, opacity and motion tokens now cover translucent fills, white-to-transparent edge highlights and backdrop blur that can be applied to any component.
+          </p>
+          <div class="flex flex-wrap gap-3">
+            <button class="glass-button inline-flex h-[var(--size-component-height-default)] items-center gap-2 px-4 text-body-md text-content-primary">
+              Transparent action
+            </button>
+            <button class="inline-flex h-[var(--size-component-height-default)] items-center gap-2 rounded-interactive-md border border-material-glass-border bg-material-glass-surface-soft px-4 text-body-md text-content-primary backdrop-blur-[var(--blur-level-sm)] transition duration-[var(--motion-transition-hover-duration)] ease-[var(--motion-transition-hover-easing)] hover:bg-material-glass-surface">
+              Soft surface
+            </button>
+          </div>
+        </article>
+
+        <aside class="rounded-surface-md border border-line-subtle bg-surface p-6 shadow-sm">
+          <h2 class="mb-3 text-heading font-heading tracking-heading text-content-primary">Motion coverage</h2>
+          <div class="space-y-3 text-body-sm text-content-secondary">
+            <p><strong class="text-content-primary">Press:</strong> `quick` + default easing for immediate tactile feedback.</p>
+            <p><strong class="text-content-primary">Hover:</strong> semantic preset keeps recurrent interactions aligned.</p>
+            <p><strong class="text-content-primary">Atmospheric:</strong> long durations are now public for larger hero and page moments.</p>
+          </div>
+        </aside>
       </section>
 
       <section class="grid gap-6 lg:grid-cols-[1.5fr_1fr]">

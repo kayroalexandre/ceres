@@ -1,6 +1,36 @@
 {
   "effect": {
     "blur": {
+      "level": {
+        "none": {
+          "value": "{effect.blur.0}",
+          "description": "Sem blur. Use quando a superficie precisa permanecer nítida."
+        },
+        "xs": {
+          "value": "{effect.blur.4}",
+          "description": "Blur minimo para bordas suaves, highlights atmosféricos e pequenas camadas translúcidas."
+        },
+        "sm": {
+          "value": "{effect.blur.8}",
+          "description": "Blur leve para botoes glass, pills e pequenos overlays."
+        },
+        "md": {
+          "value": "{effect.blur.12}",
+          "description": "Blur intermediario para superficies translúcidas e paineis com separacao moderada."
+        },
+        "lg": {
+          "value": "{effect.blur.16}",
+          "description": "Blur forte para cards de vidro, toolbars flutuantes e superficies elevadas."
+        },
+        "xl": {
+          "value": "{effect.blur.24}",
+          "description": "Blur amplo para modais, hero glass e grandes planos de destaque."
+        },
+        "atmospheric": {
+          "value": "{effect.blur.40}",
+          "description": "Blur extremo para composições hero, fundos art direction e efeitos bem mais expressivos."
+        }
+      },
       "backdrop": {
         "sm": {
           "value": "{effect.blur.8}",
@@ -16,9 +46,17 @@
         }
       },
       "surface": {
+        "soft": {
+          "value": "{effect.blur.8}",
+          "description": "Blur de superficie leve para botoes, badges e pequenos elementos glass."
+        },
         "glass": {
           "value": "{effect.blur.16}",
           "description": "Desfoque recomendado para cards e superficies de vidro como uso mais comum."
+        },
+        "strong": {
+          "value": "{effect.blur.24}",
+          "description": "Blur de superficie mais denso para paineis amplos e overlays de maior destaque."
         }
       }
     }

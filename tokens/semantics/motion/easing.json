@@ -1,6 +1,10 @@
 {
   "motion": {
     "easing": {
+      "linear": {
+        "value": "linear",
+        "description": "Curva linear para progressos constantes, loops e ajustes que nao pedem aceleracao."
+      },
       "default": {
         "value": "{motion.easing.standard}",
         "description": "Curva padrao para a maior parte das transicoes de interface."

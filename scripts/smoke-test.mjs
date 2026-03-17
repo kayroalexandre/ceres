@@ -116,7 +116,19 @@ async function main() {
       errors.push(`${output.themeCss} nao exporta --shadow-sm.`);
     }
 
-    if (!("color" in tokensJson) || !("typography" in tokensJson) || !("size" in tokensJson)) {
+    if (!themeCss.includes("--color-material-glass-surface:")) {
+      errors.push(`${output.themeCss} nao exporta --color-material-glass-surface.`);
+    }
+
+    if (!themeCss.includes("--blur-level-md:")) {
+      errors.push(`${output.themeCss} nao exporta --blur-level-md.`);
+    }
+
+    if (!themeCss.includes("--motion-transition-press-duration:")) {
+      errors.push(`${output.themeCss} nao exporta --motion-transition-press-duration.`);
+    }
+
+    if (!("color" in tokensJson) || !("typography" in tokensJson) || !("size" in tokensJson) || !("effect" in tokensJson) || !("motion" in tokensJson)) {
       errors.push(`${output.tokensJson} nao contem os domínios esperados de contrato publico.`);
     }
 
@@ -151,6 +163,15 @@ async function main() {
   const contractDoc = await readText("docs/public-contract.md");
   if (!contractDoc.includes("## Uso Rapido")) {
     errors.push("docs/public-contract.md nao contem a secao de uso rapido.");
+  }
+
+  const agentGuide = await readText("docs/agent-guide.md");
+  if (!agentGuide.includes("Tailwind v4")) {
+    errors.push("docs/agent-guide.md nao contem instrucoes de Tailwind v4.");
+  }
+
+  if (!agentGuide.includes("shadcn/ui")) {
+    errors.push("docs/agent-guide.md nao contem instrucoes de shadcn/ui.");
   }
 
   const manifestWrapper = await import(pathToFileURL(path.join(rootDir, "dist/manifest.js")).href);
@@ -191,6 +212,8 @@ async function main() {
     "./manifest",
     "./manifest.json",
     "./contract",
+    "./agent-guide",
+    "./agent-guide.md",
     "./recipes/button",
     "./recipes/input",
     "./recipes/card",

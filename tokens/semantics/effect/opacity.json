@@ -1,6 +1,40 @@
 {
   "effect": {
     "opacity": {
+      "level": {
+        "transparent": {
+          "value": "{effect.opacity.0}",
+          "description": "Sem opacidade visivel. Use para estados ocultos e inicios de fade."
+        },
+        "hairline": {
+          "value": "{effect.opacity.5}",
+          "description": "Opacidade minima para hairlines, brilhos discretos e divisores quase invisiveis."
+        },
+        "soft": {
+          "value": "{effect.opacity.10}",
+          "description": "Opacidade leve para superfícies transparentes, gradientes sutis e reforcos visuais pequenos."
+        },
+        "muted": {
+          "value": "{effect.opacity.20}",
+          "description": "Opacidade moderada para backgrounds translúcidos, bordas suaves e camadas de apoio."
+        },
+        "strong": {
+          "value": "{effect.opacity.40}",
+          "description": "Opacidade forte para estados com menor enfase, fills semitransparentes e superfícies glass mais densas."
+        },
+        "heavy": {
+          "value": "{effect.opacity.60}",
+          "description": "Opacidade alta para superfícies bem presentes, overlays suaves e bloqueios leves do fundo."
+        },
+        "intense": {
+          "value": "{effect.opacity.80}",
+          "description": "Opacidade muito alta para scrims, overlays de foco e mascaras mais marcadas."
+        },
+        "solid": {
+          "value": "{effect.opacity.100}",
+          "description": "Totalmente opaco. Use quando o material deixa de ser translúcido."
+        }
+      },
       "disabled": {
         "value": "{effect.opacity.40}",
         "description": "Opacidade recomendada para elementos desabilitados ou com enfase reduzida."

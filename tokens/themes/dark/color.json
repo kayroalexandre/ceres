@@ -189,6 +189,25 @@
         }
       }
     },
+    "material": {
+      "glass": {
+        "surfaceSoft": {
+          "value": "{material.glass.dark.surfaceSoft}"
+        },
+        "surface": {
+          "value": "{material.glass.dark.surface}"
+        },
+        "surfaceStrong": {
+          "value": "{material.glass.dark.surfaceStrong}"
+        },
+        "border": {
+          "value": "{material.glass.dark.border}"
+        },
+        "highlight": {
+          "value": "{material.glass.dark.highlight}"
+        }
+      }
+    },
     "overlay": {
       "subtle": {
         "color": {

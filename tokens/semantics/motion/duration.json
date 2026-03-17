@@ -5,6 +5,10 @@
         "value": "{motion.duration.0}",
         "description": "Duracao nula para mudancas que devem acontecer sem animacao perceptivel."
       },
+      "quick": {
+        "value": "{motion.duration.75}",
+        "description": "Duracao minima para press, tap feedback e respostas quase imediatas."
+      },
       "micro": {
         "value": "{motion.duration.100}",
         "description": "Duracao para feedbacks imediatos como hover, focus e pequenas mudancas de estado."
@@ -24,6 +28,10 @@
       "emphasis": {
         "value": "{motion.duration.500}",
         "description": "Duracao para movimentos com maior carga expressiva ou destaque visual."
+      },
+      "atmospheric": {
+        "value": "{motion.duration.700}",
+        "description": "Duracao longa para cenas hero, passagens mais cenograficas e motion com respiro amplo."
       }
     }
   }

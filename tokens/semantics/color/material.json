@@ -1,0 +1,28 @@
+{
+  "color": {
+    "material": {
+      "glass": {
+        "surfaceSoft": {
+          "value": "{material.glass.light.surfaceSoft}",
+          "description": "Fundo translúcido leve para botoes, chips e pequenos painéis que precisam deixar o contexto aparecer."
+        },
+        "surface": {
+          "value": "{material.glass.light.surface}",
+          "description": "Fundo glass padrão para cards, controles e superficies que combinam transparencia com legibilidade."
+        },
+        "surfaceStrong": {
+          "value": "{material.glass.light.surfaceStrong}",
+          "description": "Fundo glass mais denso para paineis que precisam segurar melhor o conteúdo sem perder o efeito translúcido."
+        },
+        "border": {
+          "value": "{material.glass.light.border}",
+          "description": "Borda translúcida para contornos de vidro e superficies com brilho sutil."
+        },
+        "highlight": {
+          "value": "{material.glass.light.highlight}",
+          "description": "Highlight claro para gradientes de borda que saem do branco e desaparecem em transparencia."
+        }
+      }
+    }
+  }
+}

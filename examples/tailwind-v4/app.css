@@ -4,6 +4,54 @@
 @layer base {
   body {
     @apply bg-canvas text-content-primary antialiased;
+    background:
+      radial-gradient(circle at top left, color-mix(in srgb, var(--color-brand) 20%, transparent), transparent 42%),
+      radial-gradient(circle at top right, color-mix(in srgb, var(--color-info) 16%, transparent), transparent 40%),
+      linear-gradient(180deg, color-mix(in srgb, var(--color-surface-subtle) 70%, transparent), transparent 55%),
+      var(--color-canvas);
     font-family: var(--font-body);
+  }
+}
+
+@layer components {
+  .glass-panel {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--color-material-glass-border);
+    border-radius: var(--radius-surface-md);
+    background:
+      linear-gradient(135deg, var(--color-material-glass-highlight), transparent 55%),
+      var(--color-material-glass-surface);
+    box-shadow: var(--shadow-lg);
+    backdrop-filter: blur(var(--blur-backdrop-md));
+  }
+
+  .glass-button {
+    position: relative;
+    border: 1px solid transparent;
+    border-radius: var(--radius-interactive-md);
+    background:
+      linear-gradient(var(--color-material-glass-surface), var(--color-material-glass-surface)) padding-box,
+      linear-gradient(135deg, var(--color-material-glass-highlight), transparent 75%) border-box;
+    box-shadow: var(--shadow-sm);
+    backdrop-filter: blur(var(--blur-surface-soft));
+    transition:
+      transform var(--motion-transition-press-duration) var(--motion-transition-press-easing),
+      box-shadow var(--motion-transition-hover-duration) var(--motion-transition-hover-easing),
+      background-color var(--motion-transition-hover-duration) var(--motion-transition-hover-easing),
+      backdrop-filter var(--motion-transition-hover-duration) var(--motion-transition-hover-easing);
+  }
+
+  .glass-button:hover {
+    background:
+      linear-gradient(var(--color-material-glass-surface-strong), var(--color-material-glass-surface-strong)) padding-box,
+      linear-gradient(135deg, var(--color-material-glass-highlight), transparent 75%) border-box;
+    box-shadow: var(--shadow-md);
+    backdrop-filter: blur(var(--blur-surface-glass));
+    transform: translateY(-1px);
+  }
+
+  .glass-button:active {
+    transform: scale(0.98);
   }
 }

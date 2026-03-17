@@ -45,7 +45,7 @@ Regra de seguranca do workflow:
 
 ## Arquitetura
 
-- `tokens/primitives`: foundations brutas do sistema, como paletas base, spacing, radius, fontSize, fontWeight, lineHeight, fontStyle, opacity, blur, motion, layout, layer e escalas dimensionais auxiliares.
+- `tokens/primitives`: foundations brutas do sistema, como paletas base, spacing, radius, fontSize, fontWeight, lineHeight, fontStyle, opacity, blur, motion, material, layout, layer e escalas dimensionais auxiliares.
 - `tokens/brand/<brand>`: camada de branding. Aqui entram a escala `color.brand.*` e `typography.fontFamily.*`.
 - `tokens/semantics`: tokens com contexto de uso. Tipografia, size, effect, motion, layout e layer vivem aqui como contrato compartilhado.
 - `tokens/themes/dark`: camada de override de modo. A cor semantica base representa o light default, e o dark sobrescreve apenas os tokens que realmente mudam.
@@ -61,6 +61,7 @@ Os artefatos oficiais do sistema sao:
 - `dist/manifest.js`
 - `docs/output-manifest.json`
 - `docs/public-contract.md`
+- `docs/agent-guide.md`
 
 Politica oficial de contrato:
 
@@ -79,6 +80,7 @@ Subpaths públicos de consumo:
 - `@ceres_design_system/design-tokens/manifest`
 - `@ceres_design_system/design-tokens/manifest.json`
 - `@ceres_design_system/design-tokens/contract`
+- `@ceres_design_system/design-tokens/agent-guide`
 - `@ceres_design_system/design-tokens/recipes/<component>`
 - `@ceres_design_system/design-tokens/recipes/<component>.json`
 
@@ -114,6 +116,9 @@ npm install -D style-dictionary
 - `shadow` vive em `tokens/semantics/effect` como `effect.shadow.*`, mantendo o contrato de efeito consistente com blur e opacity.
 - `opacity` e `blur` vivem em `primitives` como escala bruta e sobem para `semantics/effect` apenas quando existe contexto real de uso.
 - `motion` vive em `primitives` como escala bruta de duration e easing, e sobe para `semantics/motion` quando vira contrato de uso, como hover, dialog e page transition.
+- `color.material.*` e a camada publica de composicao visual para glass, superficies translúcidas e bordas com highlight sem quebrar a separacao entre papel semantico e foundation interna.
+- `effect.blur.level.*` e `effect.opacity.level.*` expoem a escala composicional completa de blur e transparencia para qualquer componente, sem pedir acesso direto a `primitives`.
+- `motion.duration.*`, `motion.easing.*` e `motion.transition.*` agora cobrem tanto presets de componente quanto timing mais livre para composicoes maiores.
 - `layout`, `layer`, `borderWidth`, `componentHeight` e `icon-size` seguem a mesma logica: escala bruta em `primitives` e contratos de uso em `semantics`.
 - `overlay` e `state-layer` entram em `semantics/color` e podem ser sobrescritos por modo no `dark` quando a leitura visual pedir outro comportamento.
 - O contrato publico do build vem apenas de `tokens/semantics/**` e `tokens/themes/dark/**`.
@@ -148,6 +153,7 @@ O build usa mapeamento automático com base nos paths públicos reais dos tokens
 - `color.foreground.default` -> `--color-icon` -> `fill-icon` ou `text-icon`
 - `color.action.primary.background` -> `--color-action-primary` -> `bg-action-primary`
 - `color.feedback.success.foreground` -> `--color-on-success` -> `text-on-success`
+- `color.material.glass.surface` -> `--color-material-glass-surface` -> `bg-material-glass-surface`
 - `color.border.subtle` -> `--color-line-subtle` -> `border-line-subtle`
 - `typography.*.fontFamily` -> `--font-*`
 - `typography.*.size*` -> `--text-*`
@@ -196,6 +202,22 @@ const transition = {
   duration: Number.parseFloat(tokens.motion.duration.fast) / 1000,
   ease: tokens.motion.transition.hover.easing
 };
+```
+
+Exemplo de composicao glass no app consumidor:
+
+```css
+.glass-button {
+  background:
+    linear-gradient(var(--color-material-glass-surface), var(--color-material-glass-surface)) padding-box,
+    linear-gradient(135deg, var(--color-material-glass-highlight), transparent 75%) border-box;
+  border: 1px solid transparent;
+  backdrop-filter: blur(var(--blur-surface-soft));
+  box-shadow: var(--shadow-sm);
+  transition:
+    transform var(--motion-transition-press-duration) var(--motion-transition-press-easing),
+    box-shadow var(--motion-transition-hover-duration) var(--motion-transition-hover-easing);
+}
 ```
 
 O repositório nao instala nem depende de Framer Motion; ele apenas expõe os valores de motion de forma segura para consumo.

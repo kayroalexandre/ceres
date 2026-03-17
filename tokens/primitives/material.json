@@ -1,0 +1,50 @@
+{
+  "material": {
+    "glass": {
+      "light": {
+        "surfaceSoft": {
+          "value": "rgba(249, 250, 252, 0.56)",
+          "description": "Base translúcida leve para superficies glass em contextos claros."
+        },
+        "surface": {
+          "value": "rgba(249, 250, 252, 0.72)",
+          "description": "Base glass padrão para cards e controles em contextos claros."
+        },
+        "surfaceStrong": {
+          "value": "rgba(249, 250, 252, 0.88)",
+          "description": "Base glass mais densa para paineis claros com maior retenção de conteúdo."
+        },
+        "border": {
+          "value": "rgba(255, 255, 255, 0.28)",
+          "description": "Contorno translúcido claro para materiais glass."
+        },
+        "highlight": {
+          "value": "rgba(255, 255, 255, 0.72)",
+          "description": "Highlight claro para gradientes de borda em materiais glass."
+        }
+      },
+      "dark": {
+        "surfaceSoft": {
+          "value": "rgba(10, 11, 14, 0.48)",
+          "description": "Base translúcida leve para superficies glass em contextos escuros."
+        },
+        "surface": {
+          "value": "rgba(10, 11, 14, 0.64)",
+          "description": "Base glass padrão para cards e controles em contextos escuros."
+        },
+        "surfaceStrong": {
+          "value": "rgba(10, 11, 14, 0.8)",
+          "description": "Base glass mais densa para paineis escuros com maior retenção de conteúdo."
+        },
+        "border": {
+          "value": "rgba(255, 255, 255, 0.16)",
+          "description": "Contorno translúcido para materiais glass sobre fundos escuros."
+        },
+        "highlight": {
+          "value": "rgba(255, 255, 255, 0.52)",
+          "description": "Highlight claro controlado para gradientes de borda em contextos escuros."
+        }
+      }
+    }
+  }
+}

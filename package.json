@@ -1,6 +1,6 @@
 {
   "name": "@ceres_design_system/design-tokens",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": false,
   "type": "module",
   "license": "MIT",
@@ -21,6 +21,7 @@
   "files": [
     "dist/**/*",
     "docs/public-contract.md",
+    "docs/agent-guide.md",
     "docs/output-manifest.json",
     "docs/recipes/*.json",
     "!docs/recipes/README.md",
@@ -36,6 +37,8 @@
     "./manifest.json": "./dist/manifest.json",
     "./contract": "./docs/public-contract.md",
     "./contract.md": "./docs/public-contract.md",
+    "./agent-guide": "./docs/agent-guide.md",
+    "./agent-guide.md": "./docs/agent-guide.md",
     "./recipes/button": {
       "import": "./dist/recipes/button.js",
       "types": "./dist/recipes/button.d.ts"

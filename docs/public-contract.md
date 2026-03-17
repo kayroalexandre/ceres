@@ -10,8 +10,8 @@ Documento gerado a partir do source of truth do repositório.
 
 ## Resumo
 
-- Tokens semanticos publicos: 187
-- Overrides dark: 61
+- Tokens semanticos publicos: 216
+- Overrides dark: 66
 
 ## Uso Rapido
 
@@ -21,6 +21,7 @@ Documento gerado a partir do source of truth do repositório.
 - `color.content.primary` -> `--color-content-primary` -> `text-content-primary`
 - `color.border.subtle` -> `--color-line-subtle` -> `border-line-subtle`
 - `color.feedback.success.foreground` -> `--color-on-success` -> `text-on-success`
+- `color.material.glass.surface` -> `--color-material-glass-surface` -> `bg-material-glass-surface`
 
 ### Typography
 
@@ -28,12 +29,13 @@ Documento gerado a partir do source of truth do repositório.
 - `typography.title.page.sizeBase` -> `--text-title-page` -> `text-title-page`
 - `typography.body.body.fontFamily` -> `--font-body` -> `font-body`
 
-### Effects and Layout
+### Effects, Motion and Layout
 
 - `effect.shadow.md` -> `--shadow-md` -> `shadow-md`
+- `effect.blur.surface.glass` -> `--blur-surface-glass` -> `backdrop-blur-[var(--blur-surface-glass)]`
 - `size.radius.surface.md` -> `--radius-surface-md` -> `rounded-surface-md`
 - `layout.container.page` -> `--container-page` -> `max-w-page`
-- `motion.duration.fast` -> `var(--motion-duration-fast)` em classes arbitrarias
+- `motion.transition.press.duration` -> `var(--motion-transition-press-duration)` em classes arbitrarias
 
 
 ## Contrato Base
@@ -89,6 +91,11 @@ Documento gerado a partir do source of truth do repositório.
 - `color.foreground.inverse-disabled` - Foreground para ícones e sinais desabilitados em contextos escuros.
 - `color.foreground.inverse-subtle` - Foreground suave para estados secundários dentro de contextos escuros.
 - `color.foreground.subtle` - Foreground de menor contraste para elementos decorativos ou de apoio.
+- `color.material.glass.border` - Borda translúcida para contornos de vidro e superficies com brilho sutil.
+- `color.material.glass.highlight` - Highlight claro para gradientes de borda que saem do branco e desaparecem em transparencia.
+- `color.material.glass.surface` - Fundo glass padrão para cards, controles e superficies que combinam transparencia com legibilidade.
+- `color.material.glass.surfaceSoft` - Fundo translúcido leve para botoes, chips e pequenos painéis que precisam deixar o contexto aparecer.
+- `color.material.glass.surfaceStrong` - Fundo glass mais denso para paineis que precisam segurar melhor o conteúdo sem perder o efeito translúcido.
 - `color.overlay.scrim.color` - Cor base do scrim para modais, dialogos e bloqueio de fundo.
 - `color.overlay.scrim.opacity` - Opacidade do scrim para escurecimento mais forte do fundo.
 - `color.overlay.subtle.color` - Cor base de overlay suave para escurecimento leve do fundo.
@@ -107,8 +114,25 @@ Documento gerado a partir do source of truth do repositório.
 - `effect.blur.backdrop.lg` - Desfoque amplo para modais, hero overlays e planos de fundo com maior separacao.
 - `effect.blur.backdrop.md` - Desfoque padrão para glass surfaces, drawers e paineis translúcidos.
 - `effect.blur.backdrop.sm` - Desfoque para pequenos overlays, toolbars translúcidas e superficies discretas.
+- `effect.blur.level.atmospheric` - Blur extremo para composições hero, fundos art direction e efeitos bem mais expressivos.
+- `effect.blur.level.lg` - Blur forte para cards de vidro, toolbars flutuantes e superficies elevadas.
+- `effect.blur.level.md` - Blur intermediario para superficies translúcidas e paineis com separacao moderada.
+- `effect.blur.level.none` - Sem blur. Use quando a superficie precisa permanecer nítida.
+- `effect.blur.level.sm` - Blur leve para botoes glass, pills e pequenos overlays.
+- `effect.blur.level.xl` - Blur amplo para modais, hero glass e grandes planos de destaque.
+- `effect.blur.level.xs` - Blur minimo para bordas suaves, highlights atmosféricos e pequenas camadas translúcidas.
 - `effect.blur.surface.glass` - Desfoque recomendado para cards e superficies de vidro como uso mais comum.
+- `effect.blur.surface.soft` - Blur de superficie leve para botoes, badges e pequenos elementos glass.
+- `effect.blur.surface.strong` - Blur de superficie mais denso para paineis amplos e overlays de maior destaque.
 - `effect.opacity.disabled` - Opacidade recomendada para elementos desabilitados ou com enfase reduzida.
+- `effect.opacity.level.hairline` - Opacidade minima para hairlines, brilhos discretos e divisores quase invisiveis.
+- `effect.opacity.level.heavy` - Opacidade alta para superfícies bem presentes, overlays suaves e bloqueios leves do fundo.
+- `effect.opacity.level.intense` - Opacidade muito alta para scrims, overlays de foco e mascaras mais marcadas.
+- `effect.opacity.level.muted` - Opacidade moderada para backgrounds translúcidos, bordas suaves e camadas de apoio.
+- `effect.opacity.level.soft` - Opacidade leve para superfícies transparentes, gradientes sutis e reforcos visuais pequenos.
+- `effect.opacity.level.solid` - Totalmente opaco. Use quando o material deixa de ser translúcido.
+- `effect.opacity.level.strong` - Opacidade forte para estados com menor enfase, fills semitransparentes e superfícies glass mais densas.
+- `effect.opacity.level.transparent` - Sem opacidade visivel. Use para estados ocultos e inicios de fade.
 - `effect.opacity.scrim` - Opacidade para overlays de bloqueio, foco modal e escurecimento do fundo.
 - `effect.opacity.subtle` - Opacidade para superficies transparentes suaves e componentes de apoio.
 - `effect.shadow.lg` - Sombra ampla para modais, paineis elevados e camadas com maior profundidade.
@@ -149,24 +173,31 @@ Documento gerado a partir do source of truth do repositório.
 
 ### motion
 
+- `motion.duration.atmospheric` - Duracao longa para cenas hero, passagens mais cenograficas e motion com respiro amplo.
 - `motion.duration.emphasis` - Duracao para movimentos com maior carga expressiva ou destaque visual.
 - `motion.duration.fast` - Duracao para acoes rapidas e interacoes recorrentes em componentes.
 - `motion.duration.instant` - Duracao nula para mudancas que devem acontecer sem animacao perceptivel.
 - `motion.duration.micro` - Duracao para feedbacks imediatos como hover, focus e pequenas mudancas de estado.
 - `motion.duration.moderate` - Duracao base para transicoes gerais da interface.
+- `motion.duration.quick` - Duracao minima para press, tap feedback e respostas quase imediatas.
 - `motion.duration.slow` - Duracao para paineis, overlays e transicoes com mais respiro.
 - `motion.easing.default` - Curva padrao para a maior parte das transicoes de interface.
 - `motion.easing.emphasis` - Curva para animacoes com maior impacto visual e comportamento mais expressivo.
 - `motion.easing.enter` - Curva recomendada para entradas de elementos e superfícies.
 - `motion.easing.exit` - Curva recomendada para saídas e fechamentos de elementos.
+- `motion.easing.linear` - Curva linear para progressos constantes, loops e ajustes que nao pedem aceleracao.
 - `motion.transition.dialog.enterDuration` - Duracao de entrada para dialogos, drawers e modais.
 - `motion.transition.dialog.enterEasing` - Curva de entrada para superficies que surgem com suavidade.
 - `motion.transition.dialog.exitDuration` - Duracao de saida para dialogos e superficies temporarias.
 - `motion.transition.dialog.exitEasing` - Curva de saida para fechamento rapido e claro.
+- `motion.transition.emphasis.duration` - Duracao para movimentos de maior protagonismo visual dentro da interface.
+- `motion.transition.emphasis.easing` - Curva para entradas e saidas mais dramaticas, sem perder o controle visual.
 - `motion.transition.hover.duration` - Duracao recomendada para hover e resposta imediata em componentes.
 - `motion.transition.hover.easing` - Curva padrao para feedbacks rapidos de hover.
 - `motion.transition.page.duration` - Duracao para transicoes de pagina ou mudancas maiores de contexto.
 - `motion.transition.page.easing` - Curva expressiva para transicoes mais marcantes de tela.
+- `motion.transition.press.duration` - Duracao para press, tap e microajustes de escala ou profundidade.
+- `motion.transition.press.easing` - Curva padrao para feedbacks de press sem atraso perceptivel.
 
 ### size
 
@@ -297,6 +328,11 @@ Documento gerado a partir do source of truth do repositório.
 - `color.foreground.inverse-disabled`
 - `color.foreground.inverse-subtle`
 - `color.foreground.subtle`
+- `color.material.glass.border`
+- `color.material.glass.highlight`
+- `color.material.glass.surface`
+- `color.material.glass.surfaceSoft`
+- `color.material.glass.surfaceStrong`
 - `color.overlay.scrim.color`
 - `color.overlay.scrim.opacity`
 - `color.overlay.subtle.color`

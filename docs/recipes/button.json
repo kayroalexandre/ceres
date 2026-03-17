@@ -56,6 +56,31 @@
         "labelColor": "color.action.disabled.foreground",
         "iconColor": "color.foreground.disabled"
       }
+    },
+    "glass": {
+      "default": {
+        "background": "color.material.glass.surface",
+        "borderColor": "color.material.glass.border",
+        "borderHighlight": "color.material.glass.highlight",
+        "labelColor": "color.content.primary",
+        "iconColor": "color.foreground.default",
+        "backdropBlur": "effect.blur.surface.soft",
+        "shadow": "effect.shadow.sm"
+      },
+      "hover": {
+        "background": "color.material.glass.surfaceStrong",
+        "borderColor": "color.material.glass.border",
+        "borderHighlight": "color.material.glass.highlight",
+        "backdropBlur": "effect.blur.surface.glass",
+        "shadow": "effect.shadow.md"
+      },
+      "disabled": {
+        "background": "color.material.glass.surfaceSoft",
+        "borderColor": "color.material.glass.border",
+        "labelColor": "color.content.disabled",
+        "iconColor": "color.foreground.disabled",
+        "opacity": "effect.opacity.level.strong"
+      }
     }
   },
   "states": {
@@ -65,6 +90,10 @@
     }
   },
   "motion": {
+    "press": {
+      "duration": "motion.transition.press.duration",
+      "easing": "motion.transition.press.easing"
+    },
     "hover": {
       "duration": "motion.transition.hover.duration",
       "easing": "motion.transition.hover.easing"
